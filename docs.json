@@ -1,72 +1,120 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Grievly Docs",
+  "description": "Product documentation for Grievly, the grievance operations platform for skilled nursing facilities.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "primary": "#2F805A",
+    "light": "#54B487",
+    "dark": "#0F4A35"
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo.svg",
+    "dark": "/logo-dark.svg",
+    "href": "https://grievly.ai"
+  },
+  "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "light"
+  },
+  "fonts": {
+    "family": "Inter",
+    "heading": {
+      "family": "Inter",
+      "weight": 600
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "background": {
+    "color": {
+      "light": "#F7F3EA",
+      "dark": "#15231E"
+    }
+  },
+  "search": {
+    "prompt": "Search Grievly docs"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get started",
+        "pages": [
+          "index",
+          "getting-started/sign-in",
+          "getting-started/roles-and-permissions",
+          "getting-started/first-workspace-setup"
+        ]
+      },
+      {
+        "group": "Daily grievance work",
+        "pages": [
+          "insights/dashboard",
+          "grievance-log/grievance-queues",
+          "grievance-log/create-a-grievance",
+          "grievance-log/view-and-filter",
+          "grievance-log/work-a-grievance-case",
+          "grievance-log/mentions-and-notifications",
+          "grievance-log/attachments",
+          "grievance-log/resolve-a-grievance"
+        ]
+      },
+      {
+        "group": "Triage and labels",
+        "pages": [
+          "triage-and-labels/ai-intake-analysis",
+          "triage-and-labels/high-priority-grievances",
+          "triage-and-labels/sla-deadlines",
+          "triage-and-labels/ftags-and-categories"
+        ]
+      },
+      {
+        "group": "Public Intake",
+        "pages": [
+          "public-intake/share-intake-links",
+          "public-intake/review-public-submissions"
+        ]
+      },
+      {
+        "group": "Insights",
+        "pages": [
+          "insights/assistant",
+          "insights/patterns",
+          "insights/analytics",
+          "reports/generate-a-report"
+        ]
+      },
+      {
+        "group": "Admin setup",
+        "pages": [
+          "settings/team-access",
+          "getting-started/facilities",
+          "settings/workspace-defaults",
+          "settings/compliance-and-baa",
+          "settings/billing"
+        ]
+      },
+      {
+        "group": "Reference",
+        "pages": [
+          "reference/statuses-and-filters",
+          "reference/privacy-and-phi",
+          "troubleshooting/common-issues"
+        ]
+      }
+    ]
   },
   "navbar": {
     "links": [
       {
+        "label": "Open Grievly",
+        "href": "https://app.grievly.ai"
+      },
+      {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@grievly.ai"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }

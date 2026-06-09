@@ -1,0 +1,80 @@
+---
+title: "Patterns"
+description: "Review clusters of similar grievances and emerging operational signals."
+---
+
+Patterns are clusters of similar grievances found by Grievly.
+
+They help teams spot repeated concerns, shared signals, and possible operational issues across one or more facilities.
+
+## Pattern anatomy
+
+| Area | What it shows |
+| --- | --- |
+| Summary | The pattern title, status, and short explanation |
+| Linked grievances | The cases that make up the pattern |
+| Signals | Shared operational details such as facility, location, department, daypart, or reporter type |
+| Recommendations | Review prompts generated from the pattern |
+
+## What a pattern contains
+
+A pattern can include:
+
+- Title and summary.
+- Status.
+- Linked grievances.
+- Facility breakdown.
+- Confidence and similarity information.
+- Signals such as location, department, daypart, or reporter type.
+- AI recommendations or fallback recommendations.
+
+## Pattern statuses
+
+Patterns can move through several statuses.
+
+- **Open**: active pattern needing review.
+- **Monitoring**: active pattern being watched over time.
+- **Resolved**: operator marked the pattern resolved.
+- **Dismissed**: no current cluster supports the pattern.
+- **Archived**: read-only historical pattern.
+- **Suppressed**: operator marked the pattern as a false positive so it should not be recreated.
+
+Operators can manage active pattern statuses. Some controls are administrator-only.
+
+## Admin-only controls
+
+Admins can:
+
+- Request pattern scans.
+- Change pattern status between open, monitoring, and resolved.
+- Suppress a pattern.
+- Remove a grievance from a pattern when it does not belong.
+
+Removing a grievance creates an exclusion so the next scan does not simply add it back.
+
+| Action | Result |
+| --- | --- |
+| Request scan | Queues a pattern refresh |
+| Mark monitoring | Keeps the pattern active but watched |
+| Mark resolved | Records that the operator considers the pattern resolved |
+| Suppress | Prevents similar false-positive clusters from returning |
+| Remove grievance | Excludes that grievance from the pattern on future scans |
+
+## Member access
+
+Members can review patterns that are visible within their facility scope.
+
+Pattern management controls may be hidden or unavailable for members.
+
+## How to use patterns
+
+1. Open **Patterns**.
+2. Select a pattern from the list.
+3. Review the summary, linked grievances, facility breakdown, and signals.
+4. Open linked grievances to confirm the underlying facts.
+5. Use recommendations as review prompts, not final decisions.
+6. Update the pattern status when the team has reviewed it.
+
+## Advisory only
+
+Patterns help direct attention. They do not prove causation, establish fault, close grievances, or replace QAPI or leadership review.
