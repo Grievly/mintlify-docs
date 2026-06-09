@@ -57,7 +57,8 @@
           "grievance-log/work-a-grievance-case",
           "grievance-log/mentions-and-notifications",
           "grievance-log/attachments",
-          "grievance-log/resolve-a-grievance"
+          "grievance-log/resolve-a-grievance",
+          "grievance-log/resolution-approvals"
         ]
       },
       {

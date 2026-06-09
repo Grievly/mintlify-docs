@@ -41,7 +41,7 @@ Each facility has four tabs: **Details**, **Locations**, **Departments**, and **
 
 | Tab | Main job | Admin-only actions |
 | --- | --- | --- |
-| Details | Facility facts and public intake | Edit details, copy link, download QR poster |
+| Details | Facility facts, resolution approvals, and public intake | Edit details, configure required signers, copy link, download QR poster |
 | Locations | Units, rooms, and areas | Create, rename, move, bulk create, bulk delete |
 | Departments | Routing groups | Create, edit, assign members, delete |
 | Configuration | Facility lifecycle | Archive or restore |
@@ -50,9 +50,29 @@ Each facility has four tabs: **Details**, **Locations**, **Departments**, and **
 
 Use **Details** to review or update the facility name, city, state, bed count, and CMS provider number.
 
+Administrators can also configure **Resolution approvals** on this tab.
+
+Resolution approvals let a facility require specific people to sign off before a grievance resolution is completed. When enabled, users submit the resolution for approval instead of resolving directly. Every required signer captured at submission time must approve, unless an administrator explicitly bypasses remaining approvals.
+
+To configure approvals:
+
+1. Turn on **Require resolution approvals**.
+2. Select one or more required signers.
+3. Save the setting.
+
+Only users with access to the facility can be selected as signers. Organization admins can also be selected.
+
+<Note>
+  Approvals cannot be enabled without at least one required signer. If approvals are off, the facility keeps the standard direct resolution workflow.
+</Note>
+
 The public intake panel is also on this tab for administrators. It shows the permanent intake URL, QR code, last-used information, and poster download.
 
 Members can view basic facility details when they have access, but administrator access is required to manage details and public intake links.
+
+<Card title="Resolution approvals" icon="shield-check" href="/grievance-log/resolution-approvals">
+  Review the full approval workflow, including self-approval, admin bypass, cancel and resubmit, and reopen behavior.
+</Card>
 
 ### Locations
 
