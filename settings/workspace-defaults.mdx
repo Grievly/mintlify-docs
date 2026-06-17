@@ -1,22 +1,23 @@
 ---
-title: "Workspace defaults"
-description: "Set workspace-level grievance defaults such as SLA length."
+title: "Facility SLA defaults"
+description: "Set each facility's default grievance SLA length."
 ---
 
-Workspace defaults control behavior for new records across the organization.
+Each facility has its own default grievance SLA length.
 
-Only administrators can change workspace defaults.
+Only administrators can change facility SLA settings.
 
-## Default grievance SLA
+## Default facility SLA
 
-The default grievance SLA sets the due date window for new grievances.
+The default grievance SLA sets the due date window for new grievances created at that facility.
 
 The value is measured in hours from the received time.
 
-1. Open **Settings**.
-2. Select **Grievance defaults**.
-3. Enter the default SLA length in hours.
-4. Save changes.
+1. Open **Facilities**.
+2. Select the facility.
+3. Open **Configuration**.
+4. In **Grievance SLA**, enter the default SLA length in hours.
+5. Save changes.
 
 ## Allowed range
 
@@ -26,11 +27,14 @@ The SLA must be at least 1 hour and no more than 720 hours.
 
 ## What changes affect
 
-Changing the default SLA affects new grievances created after the change.
+Changing a facility's default SLA affects new grievances created for that facility after the change.
 
 It does not rewrite the history of already-created grievances.
+
+Facilities can use different SLA lengths when their operational expectations differ.
 
 ## Related pages
 
 - [SLA deadlines](/triage-and-labels/sla-deadlines)
 - [Grievance queues](/grievance-log/grievance-queues)
+- [Manage facilities](/getting-started/facilities)

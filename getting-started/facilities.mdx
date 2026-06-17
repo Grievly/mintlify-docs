@@ -44,7 +44,7 @@ Each facility has four tabs: **Details**, **Locations**, **Departments**, and **
 | Details | Facility facts, resolution approvals, and public intake | Edit details, configure required signers, copy link, download QR poster |
 | Locations | Units, rooms, and areas | Create, rename, move, bulk create, bulk delete |
 | Departments | Routing groups | Create, edit, assign members, delete |
-| Configuration | Facility lifecycle | Archive or restore |
+| Configuration | Facility SLA and lifecycle | Change default grievance SLA, archive, or restore |
 
 ### Details
 
@@ -103,7 +103,17 @@ Departments are useful for routing work to Nursing, Dietary, Maintenance, Social
 
 ### Configuration
 
-Use **Configuration** to archive or restore a facility.
+Use **Configuration** to set the facility's default grievance SLA and manage facility lifecycle.
+
+The **Grievance SLA** setting controls the due date window for new grievances at that facility. The value is measured in hours from the received time.
+
+To update the SLA:
+
+1. Open the facility's **Configuration** tab.
+2. Enter the default SLA length in hours.
+3. Save the change.
+
+Changing the SLA affects new grievances only. Existing grievance due dates are not rewritten.
 
 Archiving keeps historical records available, but removes the facility from new intake, public intake, and new grievance assignment until it is restored.
 
