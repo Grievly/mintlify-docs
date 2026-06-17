@@ -7,23 +7,23 @@ The grievance detail page is the working record for a case.
 
 It has three main areas:
 
-- **Header** for title, display ID, status, High Priority, and reopen actions.
-- **Timeline** for intake, AI summary, comments, activity, attachments, and resolution prompts.
+- **Header** for title, display ID, status, High Priority, and case actions.
+- **Timeline** for the original submission, AI summary, comments, activity, attachments, and resolution prompts.
 - **Right rail** for notifications, case metadata, pattern membership, attachments, and participants.
 
 ## Case anatomy
 
 | Area | What it contains |
 | --- | --- |
-| Header | Title, grievance ID, status, High Priority, and reopen action |
-| Timeline | Intake, AI summary, comments, activity, attachments, and resolution prompts |
+| Header | Title, grievance ID, status, High Priority, and case actions |
+| Timeline | Original submission, AI summary, comments, activity, attachments, and resolution prompts |
 | Right rail | Notifications, metadata, patterns, attachments, and participants |
 
 ## Header
 
 The header shows the case title, grievance ID, current status, and created or resolved context.
 
-Open grievances can have their title edited. Resolved grievances are read-only in most places.
+Use the three-dot action menu to print a summary, edit the title on open grievances, or delete the grievance if you are an administrator.
 
 Admins can reopen resolved grievances.
 
@@ -33,13 +33,25 @@ Use the timeline to understand what happened and what has changed.
 
 The timeline can include:
 
-- Intake information.
+- The opening **Grievance submitted** item with a **View original submission** button.
 - AI summary and suggested labels.
 - System events such as assignment, category, F-tag, status, attachment, and resolution changes.
 - Comments.
 - Attachment entries.
 - Resolution call-to-action when the case is still open.
 - Resolution approval panels when the facility requires sign-off before completion.
+
+## Original submission
+
+Select **View original submission** from the opening timeline item to review the full intake packet.
+
+The dialog opens in view mode. On open, unlocked grievances, select the pencil icon to correct intake details such as resident information, reporter contact details, occurrence date, employee involvement, or the original concern text.
+
+Resolved grievances and grievances pending resolution approval are locked and cannot be edited from this dialog.
+
+<Card title="Edit an original submission" icon="pencil" href="/grievance-log/edit-original-submission">
+  Follow the step-by-step edit flow and learn which fields can be corrected.
+</Card>
 
 ## Comments
 
@@ -67,7 +79,7 @@ Subscribe to receive future case activity notifications. Unsubscribe when you no
 
 ### Case metadata
 
-Review facility, status, due date, source, filed date, resident, reporter, assignee, F-tag, and category.
+Review facility, status, due date, source, filed date, resident, reporter, reporter contact details, assignee, F-tag, and category.
 
 Assignee and category can be edited while the grievance is open. F-tag override is admin-only.
 

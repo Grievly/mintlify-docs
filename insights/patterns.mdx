@@ -5,75 +5,91 @@ description: "Review clusters of similar grievances and emerging operational sig
 
 Patterns are clusters of similar grievances found by Grievly.
 
-They help teams spot repeated concerns, shared signals, and possible operational issues across one or more facilities.
+They help teams spot repeated concerns, shared signals, and possible operational issues inside the facilities they can access.
+
+Patterns are advisory. They help direct attention, but they do not prove causation, assign fault, close grievances, or replace leadership review.
 
 ## Pattern anatomy
 
 | Area | What it shows |
 | --- | --- |
-| Summary | The pattern title, status, and short explanation |
+| Feed card | Facility, last activity, momentum label, arrival sparkline, grievance count, and F-tag context |
+| Arrival timeline | When linked grievances arrived over the detection window |
+| Hotspots | Repeated location or shift signals, such as "5 of 7" grievances in one unit |
+| Suggested next steps | Review prompts generated from the pattern |
 | Linked grievances | The cases that make up the pattern |
-| Signals | Shared operational details such as facility, location, department, daypart, or reporter type |
-| Recommendations | Review prompts generated from the pattern |
 
 ## What a pattern contains
 
 A pattern can include:
 
 - Title and summary.
-- Status.
 - Linked grievances.
-- Facility breakdown.
-- Confidence and similarity information.
-- Signals such as location, department, daypart, or reporter type.
+- Facility context.
+- Arrival sparkline over the recent detection window.
+- Momentum label.
+- Hotspots for repeated where or when signals.
 - AI recommendations or fallback recommendations.
+- Dominant F-tag when Grievly can identify one.
 
-## Pattern statuses
+## Pattern feed
 
-Patterns can move through several statuses.
+Open **Patterns** to review the feed.
 
-- **Open**: active pattern needing review.
-- **Monitoring**: active pattern being watched over time.
-- **Resolved**: operator marked the pattern resolved.
-- **Dismissed**: no current cluster supports the pattern.
-- **Archived**: read-only historical pattern.
-- **Suppressed**: operator marked the pattern as a false positive so it should not be recreated.
+The feed highlights the most recently active pattern first, then shows the rest as story cards. Each card shows:
 
-Operators can manage active pattern statuses. Some controls are administrator-only.
+- Facility name.
+- Last seen date.
+- Momentum label.
+- Arrival sparkline.
+- Number of linked grievances.
+- F-tag or **Early signal** label when available.
 
-## Admin-only controls
+## Momentum labels
 
-Admins can:
+Momentum labels describe how the arrivals are changing. They are based on the arrival sparkline, not a model confidence score.
 
-- Request pattern scans.
-- Change pattern status between open, monitoring, and resolved.
-- Suppress a pattern.
-- Remove a grievance from a pattern when it does not belong.
-
-Removing a grievance creates an exclusion so the next scan does not simply add it back.
-
-| Action | Result |
+| Label | Meaning |
 | --- | --- |
-| Request scan | Queues a pattern refresh |
-| Mark monitoring | Keeps the pattern active but watched |
-| Mark resolved | Records that the operator considers the pattern resolved |
-| Suppress | Prevents similar false-positive clusters from returning |
-| Remove grievance | Excludes that grievance from the pattern on future scans |
+| Picking up | More grievances arrived recently than in the prior period |
+| New | The pattern started showing up in the last couple of months |
+| Steady | Arrivals are holding about the same over time |
+| Easing off | Fewer grievances arrived recently than in the prior period |
+
+Use the label as a triage signal. Always open the linked grievances before deciding what action to take.
+
+## Pattern detail
+
+Open a pattern to see the full story.
+
+The detail page includes:
+
+- A plain-language summary.
+- The arrival timeline for linked grievances.
+- Repeated location or shift hotspots when they exist.
+- Suggested next steps.
+- The linked grievance list.
+
+Select a linked grievance to open the case record and confirm the underlying facts.
+
+## Admin scan control
+
+Administrators can refresh the pattern scan from the Patterns page.
+
+A refresh queues a background scan. When it completes, the feed updates with the latest pattern results.
 
 ## Member access
 
 Members can review patterns that are visible within their facility scope.
 
-Pattern management controls may be hidden or unavailable for members.
-
 ## How to use patterns
 
 1. Open **Patterns**.
-2. Select a pattern from the list.
-3. Review the summary, linked grievances, facility breakdown, and signals.
-4. Open linked grievances to confirm the underlying facts.
-5. Use recommendations as review prompts, not final decisions.
-6. Update the pattern status when the team has reviewed it.
+2. Review the highlighted pattern and any additional story cards.
+3. Use momentum and the sparkline to spot what needs attention.
+4. Open a pattern to review hotspots, suggested next steps, and linked grievances.
+5. Open linked grievances to confirm the underlying facts.
+6. Use recommendations as review prompts, not final decisions.
 
 ## Advisory only
 
