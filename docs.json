@@ -43,6 +43,7 @@
         "pages": [
           "index",
           "getting-started/sign-in",
+          "getting-started/navigate-and-search",
           "getting-started/roles-and-permissions",
           "getting-started/first-workspace-setup"
         ]
