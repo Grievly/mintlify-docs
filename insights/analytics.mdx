@@ -1,49 +1,49 @@
 ---
 title: "Analytics"
-description: "Use analytics to review grievance volume, mix, timeliness, and trends."
+description: "Review grievance volume, mix, timeliness, and trends across an accessible date and facility scope."
 ---
 
-Analytics helps teams review grievance trends over time.
-
-Use it for leadership review, QAPI preparation, operational follow-up, and survey readiness.
+Analytics helps teams review grievance trends for leadership, QAPI, operational follow-up, and survey preparation.
 
 ## Filters
 
-Analytics can be filtered by:
+Analytics uses a rolling 30-day window by default. Change the date range or select one or more facilities from the page filters.
 
-- Date range.
-- Facility.
+Facility choices always respect your role and access.
 
-Facility filters respect your role and facility access.
+## What analytics can show
 
-## Widgets
+| Widget | What it shows |
+| --- | --- |
+| Grievance volume | Intake over the selected period |
+| F-tag distribution | F-tag mix when exactly one facility is in scope |
+| F-tag heatmap | Facility-by-F-tag comparison when at least two facilities are in scope |
+| Time to resolution | Days from received to resolved, including a 30-plus-day bucket and average |
+| Category mix | Distribution by operational category |
+| Status | Open and resolved mix |
+| Source | Internal and public-intake mix |
+| High-priority intake | Selected period versus the immediately preceding period of the same length |
+| Facility volume | Volume comparison when at least two facilities are in scope |
+| Overdue by facility | Currently open grievances that are past their due date |
+| Top employees mentioned | Distinct grievances by involved employee, for administrators only |
 
-Analytics can include:
+Some facility-comparison widgets appear only when at least two facilities are in scope.
 
-- Volume trend.
-- Top patterns.
-- Time-to-resolution histogram.
-- Source mix.
-- Category mix.
-- Status distribution.
-- F-tag heatmap.
-- Facility volume.
-- Overdue by facility.
-- Top employees mentioned.
+## Compare High Priority intake
 
-Some widgets only appear when enough facilities are in scope. For example, facility comparison widgets need at least two facilities.
+The High-priority widget compares both count and share with the prior period. For example, a 30-day selection is compared with the preceding 30 days.
+
+Use both values together. A higher count can reflect higher overall intake even when the share is stable.
+
+## Drill into the cases
+
+Where a widget offers a link or selectable cell, open it to review the filtered grievance list behind the metric. The cases provide the context that a chart cannot.
 
 ## Admin and member differences
 
-Admins can see organization-wide analytics and admin-only views such as top employees mentioned.
+Administrators can review all accessible organization data and see **Top employees mentioned**. Members see analytics only for assigned facilities.
 
-Members see analytics scoped to their assigned facilities.
-
-## Click-through review
-
-Some widgets link back to filtered grievance lists.
-
-Use the linked grievance list to review the actual cases behind the metric.
+The employee widget counts distinct grievances that list each involved employee. It is an occurrence-frequency view, not a workload measure or finding of fault.
 
 ## Interpret carefully
 

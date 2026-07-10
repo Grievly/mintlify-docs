@@ -15,7 +15,7 @@ Open grievances are active cases that have not been resolved.
 
 Resolved grievances have a completed resolution record.
 
-Resolved cases are read-only in most areas. Admins can reopen them if new information arrives.
+Resolved cases are read-only in most areas. Any user who can access a case can reopen it when more work is needed. Reopening requires a reason and preserves the original due date and history.
 
 ### Pending approval
 
@@ -45,12 +45,16 @@ My queue shows grievances assigned to you.
 
 It also shows grievances waiting for your resolution approval when you are a required signer.
 
+## Open and resolved list modes
+
+The grievance list opens in open-only mode. Use **Show resolved grievances** to switch to resolved records; the switch does not combine open and resolved rows.
+
 ## Common list filters
 
 The grievance list can filter by:
 
-- Facility.
-- Status.
+- Facility scope from the app-wide switcher.
+- Status: Pending Approval, Overdue, or High Priority.
 - Category.
 - F-tag.
 - Assignee.
@@ -63,11 +67,11 @@ The grievance list can filter by:
 - Third party concern.
 - Anonymous reporter.
 
-The Status filter includes **Pending approval** for open grievances with an active resolution approval request.
+Open is the default mode and Resolved uses the separate switch. In resolved mode, High Priority can still narrow resolved records that carried that marker.
 
 ## Search
 
-Search can match visible grievance details such as grievance ID, title, resident information, category, concern text, and other searchable case fields.
+Search can match grievance identifiers, titles, resident and involved-person information, concern text, case notes, attachment information, resolution fields, and timeline activity.
 
 If search results look too narrow, clear filters first and then search again.
 
@@ -75,7 +79,7 @@ The top bar search also supports recently viewed grievances, result previews, an
 
 ## Sorting
 
-The grievance list defaults to created date descending and can sort by common fields such as created date, received date, SLA, and grievance ID.
+The grievance list defaults to Created, newest first. Sortable headers include ID, Received, SLA, and Created.
 
 Sorting changes the order of results. It does not change which records match the current filters.
 

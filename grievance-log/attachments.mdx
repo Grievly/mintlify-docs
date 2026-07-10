@@ -1,48 +1,40 @@
 ---
 title: "Attachments"
-description: "Upload, review, and manage supporting files on a grievance."
+description: "Upload, scan, review, download, and manage supporting files on a grievance."
 ---
 
 Attachments are supporting files that belong with a grievance record.
 
-Use attachments for documents, images, or other files the facility needs to review or retain with the case.
+Supported uploads are PDF, Excel (`.xlsx`), Word (`.docx`), JPEG, PNG, WebP, CSV, and plain text files up to 5 MB each.
 
 ## Add an attachment
 
 1. Open the grievance.
 2. Find **Attachments** in the right rail.
-3. Upload the file.
-4. Wait for upload and scanning to complete.
+3. Drag in a file or select **Upload attachment**.
+4. Wait for upload and security scanning to complete.
 
-Attachments also appear in the case timeline so reviewers can see when files were added.
-
-Grievance lists and search results show an attachment indicator when a grievance has one or more attachments. Use the **Has attachments** filter under **Other** when you need to find records with supporting files.
+Attachments also appear in the timeline so reviewers can see when they were added.
 
 ## Scan status
 
-Uploaded files go through security scanning before they can be opened.
+Uploaded files go through security scanning before they can be opened or downloaded.
 
 Common states include:
 
-- **Pending**: scan is queued.
-- **Scanning**: scan is running.
-- **Clean**: file can be opened.
-- **Flagged**: scan found a concern.
-- **Failed**: scan did not complete.
+- **Pending**: the scan is queued.
+- **Scanning**: the scan is running.
+- **Clean**: the file can be opened or downloaded.
+- **Flagged**: the scan found a concern.
+- **Failed**: the scan did not complete.
 
-If a file is flagged or failed, do not rely on it until the issue is reviewed.
+Only a clean attachment is available to open or download.
 
-## AI analysis
+## AI summary
 
-Some attachments may also be analyzed for case context when supported.
+Supported attachments may show an advisory **Summary** panel on the timeline attachment card.
 
-AI attachment analysis is advisory. It can help summarize or surface context, but the facility remains responsible for reviewing the actual file and documenting the case.
-
-When analysis is available, the timeline attachment card shows a **Summary** panel.
-
-If Grievly detects that an attachment may not match the concern, the card shows an **Attachment may not match this concern** warning and keeps the full summary collapsed behind **Show full summary**.
-
-Always review the actual file before relying on an attachment summary or warning.
+If Grievly shows **Attachment may not match this concern**, the full summary stays collapsed behind **Show full summary**. Treat the warning as a review prompt and review the actual file before relying on either the summary or warning.
 
 ## Open or download an attachment
 
@@ -50,14 +42,22 @@ When a file has passed scanning, the timeline attachment card includes **Open** 
 
 Use **Open** for quick review in the browser. Use **Download** when the file needs to be saved for approved internal review or reporting.
 
+## Locked and resolved cases
+
+- While resolution approval is pending, users with case access can add an attachment, but existing attachments cannot be deleted.
+- After resolution, only administrators can add an attachment.
+- Existing attachments remain read-only after resolution, including attachments added by an administrator after closure.
+
 ## Delete an attachment
 
-Open the attachment action menu and choose **Delete attachment**.
+On an unlocked open grievance, use the attachment action menu and choose **Delete attachment**.
 
-Deletion removes the attachment from the active case view, but the activity remains part of the audit trail.
+The file is removed from the active record and the deletion remains visible as timeline and audit activity. Attachments cannot be deleted while approval is pending or after resolution.
+
+## Find grievances with files
+
+The grievance list displays a paperclip and attachment count. Use **Other > Has attachments** to filter the list.
 
 ## Attachment safety
 
-Only upload files that belong with the grievance.
-
-Reports with attachments may contain sensitive resident, reporter, or case information. Share them only with approved people.
+Only upload files that belong with the grievance. Reports and attachment packages can contain sensitive resident, reporter, or case information, so share them only with approved people.
