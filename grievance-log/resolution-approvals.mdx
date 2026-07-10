@@ -33,10 +33,10 @@ Only users who can access the facility can be selected as signers. Organization 
 
 ## Submit a resolution for approval
 
-When approvals are enabled for the facility, the resolution action changes from **Resolve** to **Submit for resolution approval**.
+When approvals are enabled for the facility, the resolution action changes from **Resolve** to **Submit for approval**.
 
 1. Complete the resolution fields.
-2. Select **Submit for resolution approval**.
+2. Select **Submit for approval**.
 3. Confirm the submission.
 
 Grievly creates a signer snapshot at submission time. If the facility signer list changes later, the active approval request keeps the original required signers. New requests use the updated facility configuration.
@@ -44,9 +44,10 @@ Grievly creates a signer snapshot at submission time. If the facility signer lis
 While approval is pending:
 
 - The grievance remains open.
-- The list and header show **Pending approval**.
-- Resolution edits and attachments are locked.
-- Comments remain available for discussion.
+- The list and header show **Pending Approval**.
+- Resolution fields and existing case notes and attachments are read-only.
+- Users with case access can add a new attachment.
+- Administrators can append a new case note.
 - Required signers are notified.
 
 ## Approve a resolution
@@ -84,13 +85,10 @@ The confirmation explains that no additional approvals are required because the 
 
 Administrators can resolve a grievance without waiting for every pending approval.
 
-To bypass remaining approvals:
+To bypass remaining approvals, open the pending approval panel and check **Bypass remaining approvals**.
 
-1. Open the pending approval panel.
-2. Check **Bypass remaining approvals**.
-3. Select **Resolve**.
-4. Complete the confirmation checklist.
-5. Confirm resolution.
+- If the administrator is also an unsigned required signer, select **Approve + bypass**, complete the confirmation checklist, and confirm.
+- If the administrator is not an unsigned required signer, select **Resolve**, complete the confirmation checklist, and select **Resolve grievance**.
 
 This is intended for exceptions where an administrator decides the resolution should be completed without waiting for outstanding signatures.
 
@@ -100,7 +98,7 @@ The submitter or an administrator can cancel a pending approval request.
 
 Cancelling does three things:
 
-- Unlocks resolution edits and attachments.
+- Returns the grievance to the normal unlocked open-case workflow.
 - Clears the pending approval request.
 - Requires the resolution to be submitted again before it can be approved.
 
@@ -108,7 +106,7 @@ When the resolution is resubmitted, every required approval must be signed again
 
 ## Reopen after resolution
 
-Reopening a resolved grievance clears resolution approval state from the active workflow.
+Any user who can access a resolved grievance can reopen it. Reopening requires a reason, records that reason on the timeline, preserves the original due date, and clears resolution approval state from the active workflow.
 
 After reopening, the grievance returns to the normal open workflow. If the facility still requires approvals, the resolution must be submitted again under the current facility settings.
 
@@ -116,6 +114,6 @@ After reopening, the grievance returns to the normal open workflow. If the facil
 
 Required signers see grievances pending their approval in **My queue**, even if they are not the assignee.
 
-The grievance list also includes a **Pending approval** status filter.
+The grievance list also includes a **Pending Approval** status filter.
 
 Pending approval is not a resolved status. Grievances waiting for approval still count as unresolved because the resolution has not been completed.

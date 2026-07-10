@@ -1,96 +1,80 @@
 ---
 title: "Patterns"
-description: "Review clusters of similar grievances and emerging operational signals."
+description: "Use the similarity map to review recurring themes and the grievances behind them."
 ---
 
-Patterns are clusters of similar grievances found by Grievly.
+Patterns are facility-specific groups of grievances that describe similar situations.
 
-They help teams spot repeated concerns, shared signals, and possible operational issues inside the facilities they can access.
+The Patterns map helps teams spot repeating concerns and possible emerging themes. It is advisory: proximity and grouping direct attention, but they do not prove causation, assign fault, close a grievance, or replace leadership review.
 
-Patterns are advisory. They help direct attention, but they do not prove causation, assign fault, close grievances, or replace leadership review.
+## Open a facility map
 
-## Pattern anatomy
+Open **Patterns** on a desktop computer.
 
-| Area | What it shows |
+- If you can access one facility, Grievly opens that map automatically.
+- If you can access several facilities and none is selected, choose one when prompted.
+- Use the facility menu in the upper-right to switch maps.
+
+The Patterns facility menu changes only this map. It does not change the app-wide facility scope.
+
+<Note>
+  Facility maps are calculated independently. A dot's position in one facility cannot be compared with a position in another facility.
+</Note>
+
+## How to read the map
+
+Every dot is one recent grievance. Grievances describing similar situations appear closer together.
+
+| Map mark | Meaning |
 | --- | --- |
-| Feed card | Facility, last activity, momentum label, arrival sparkline, grievance count, and F-tag context |
-| Arrival timeline | When linked grievances arrived over the detection window |
-| Hotspots | Repeated location or shift signals, such as "5 of 7" grievances in one unit |
-| Suggested next steps | Review prompts generated from the pattern |
-| Linked grievances | The cases that make up the pattern |
+| Shaded group | A repeating theme |
+| Dotted group | A possible pattern forming from two near-identical reports |
+| Neutral dot | A grievance that is not part of a repeating theme yet |
+| Dot with a small hole | A grievance that belongs to more than one theme |
 
-## What a pattern contains
+The exact position is not a score, and the grid has no axes to interpret. Use relative closeness and the shaded groups, then open the underlying cases before drawing a conclusion.
 
-A pattern can include:
+Select **How to read** on the map for the current legend and tips.
 
-- Title and summary.
-- Linked grievances.
-- Facility context.
-- Arrival sparkline over the recent detection window.
-- Momentum label.
-- Hotspots for repeated where or when signals.
-- AI recommendations or fallback recommendations.
-- Dominant F-tag when Grievly can identify one.
+## Find and inspect grievances
 
-## Pattern feed
+Use map search to find an individual grievance by its number or title. Selecting a result centers its dot and opens a preview.
 
-Open **Patterns** to review the feed.
+You can also select a dot directly. The preview lets you open the grievance record or open one of its patterns. When a grievance belongs to several patterns, choose which pattern to review.
 
-The feed highlights the most recently active pattern first, then shows the rest as story cards. Each card shows:
+## Open a pattern
 
-- Facility name.
-- Last seen date.
-- Momentum label.
-- Arrival sparkline.
-- Number of linked grievances.
-- F-tag or **Early signal** label when available.
+Select a shaded group or its name to open the pattern details panel. Where groups overlap, Grievly asks which pattern you want.
 
-## Momentum labels
-
-Momentum labels describe how the arrivals are changing. They are based on the arrival sparkline, not a model confidence score.
-
-| Label | Meaning |
-| --- | --- |
-| Picking up | More grievances arrived recently than in the prior period |
-| New | The pattern started showing up in the last couple of months |
-| Steady | Arrivals are holding about the same over time |
-| Easing off | Fewer grievances arrived recently than in the prior period |
-
-Use the label as a triage signal. Always open the linked grievances before deciding what action to take.
-
-## Pattern detail
-
-Open a pattern to see the full story.
-
-The detail page includes:
+The panel can include:
 
 - A plain-language summary.
-- The arrival timeline for linked grievances.
-- Repeated location or shift hotspots when they exist.
-- Suggested next steps.
-- The linked grievance list.
+- Activity over time for the linked grievances.
+- Up to three suggested next steps.
+- A paginated list of linked grievances.
 
-Select a linked grievance to open the case record and confirm the underlying facts.
+Select a linked grievance to open the case and confirm the underlying facts.
 
-## Admin scan control
+When you open a pattern from a grievance's right rail, the same detail panel opens over the case so you can review the pattern without first leaving the grievance.
 
-Administrators can refresh the pattern scan from the Patterns page.
+## Map controls
 
-A refresh queues a background scan. When it completes, the feed updates with the latest pattern results.
+Use the right-side controls to:
 
-## Member access
+- Zoom in or out.
+- Recenter the map.
+- Show or hide all pattern names.
 
-Members can review patterns that are visible within their facility scope.
+You can also pan the map and use a mouse wheel or trackpad to zoom.
 
-## How to use patterns
+## Processing and refreshes
 
-1. Open **Patterns**.
-2. Review the highlighted pattern and any additional story cards.
-3. Use momentum and the sparkline to spot what needs attention.
-4. Open a pattern to review hotspots, suggested next steps, and linked grievances.
-5. Open linked grievances to confirm the underlying facts.
-6. Use recommendations as review prompts, not final decisions.
+The map uses recent facility activity. A very recent grievance may not appear until its analysis and positioning are ready, and the map reports when some grievances are not shown.
 
-## Advisory only
+Automatic scans run daily and when new grievances arrive. Administrators can use **Refresh patterns** to queue another organization-wide scan. The map updates after the scan succeeds.
 
-Patterns help direct attention. They do not prove causation, establish fault, close grievances, or replace QAPI or leadership review.
+## Access and judgment
+
+Members see patterns only for facilities they can access. Administrators can view all active facilities and refresh scans.
+
+Always read the linked grievances and use the suggested next steps as review prompts. Staff remain responsible for investigation, follow-up, QAPI decisions, and resolution.

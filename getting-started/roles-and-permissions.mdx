@@ -12,13 +12,13 @@ Admins manage the workspace. Members work within the facilities they have been g
 | Area | Admin | Member |
 | --- | --- | --- |
 | Facility visibility | All active facilities in the organization | Assigned facilities only |
-| Workspace setup | Complete BAA, billing, and first facility setup | Wait for admin setup |
-| Team | Invite, edit access, revoke invites, remove users | View the active team directory |
-| Facilities | Create, edit, archive, restore, and configure | View accessible facility context |
+| Workspace setup | Sign the BAA; coordinate activation with Grievly | Wait for the readiness gates |
+| Team | Invite admins or members, edit access, manage notifications, revoke invites, and remove users | Invite members within accessible facilities and view the scoped directory |
+| Facilities | Configure organization-wide facility operations | View accessible facility context and public intake links |
 | Grievances | Work organization-wide grievances | Work accessible facility grievances |
-| F-tags | Review and override | Review suggestions |
+| F-tags | Review and edit on unlocked cases | Review and edit on unlocked cases |
 | Patterns | Review patterns and refresh scans | Review visible patterns |
-| Settings | Compliance, billing, facility setup, notifications | Own notification preferences |
+| Settings | Compliance and notification preferences | Own notification preferences |
 
 ## Admin
 
@@ -26,16 +26,18 @@ Admins can see and manage the full organization.
 
 Admins can:
 
-- Complete workspace setup, including the Business Associate Agreement, payment setup, and first facility.
-- Invite teammates and change team access.
-- Create, edit, archive, and restore facilities.
-- Manage facility locations, departments, public intake links, and QR posters.
+- Complete the Business Associate Agreement and coordinate workspace activation with Grievly.
+- Invite admins or members and change team access.
+- Manage facility locations and departments, and share public intake links, QR codes, and posters.
+- Configure facility resolution approvals and required signers.
 - View all active facilities in the organization.
 - Change facility-level defaults such as each facility's grievance SLA.
-- View compliance and billing settings.
-- Override F-tags.
+- View compliance settings and manage teammate notification preferences.
 - Refresh pattern scans.
-- Reopen resolved grievances.
+- Delete open grievances. Resolved grievances cannot be deleted.
+- Add case notes or attachments to resolved grievances without reopening them.
+
+Facility profiles, facility activation, and billing are managed by Grievly rather than from the product app.
 
 ## Member
 
@@ -46,12 +48,16 @@ Members can:
 - See grievances, dashboard data, analytics, reports, and Assistant results for facilities they can access.
 - Create and work grievances in their assigned facilities.
 - Use My queue, Overdue, and High Priority views for accessible work.
-- Add comments, mentions, attachments, and resolution documentation where their access allows.
+- Add case notes, mentions, attachments, and resolution documentation where their access allows.
+- Review and edit F-tags and categories on unlocked cases.
 - View the active team directory and each teammate's department assignments.
+- Invite new members into facilities they can access.
+- Copy public intake links and download QR codes or posters for facilities they can access.
 - Subscribe or unsubscribe from grievance notifications.
 - Manage their own notification preferences.
+- Reopen a resolved grievance they can access when more work is needed.
 
-Members cannot manage workspace setup, billing, compliance settings, facility setup, team access, or scan controls.
+Members cannot sign the BAA, change an existing user's access, manage compliance settings, change facility configuration, or refresh pattern scans. They also cannot remove existing users or delete grievances.
 
 ## Facility scope
 
@@ -61,9 +67,9 @@ Members only see facilities assigned to them. If a member cannot find a grievanc
 
 ## Waiting for admin setup
 
-If setup is incomplete, admins see the setup step they need to finish. Members see a waiting screen asking them to contact an administrator.
+If the BAA is incomplete, administrators see the agreement and members see a waiting screen. Billing and facility readiness screens tell all users when Grievly still needs to activate the workspace or provision a facility.
 
-This is expected when the workspace still needs a signed Business Associate Agreement, payment setup, or at least one active facility.
+This is expected when the workspace still needs a signed Business Associate Agreement, billing activation, or at least one active facility.
 
 ## Least access
 

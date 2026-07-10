@@ -1,63 +1,66 @@
 ---
 title: "Generate a grievance log report"
-description: "Create CSV, XLSX, or PDF reports from grievance data."
+description: "Create CSV, Excel, or PDF exports and printable case reports."
 ---
 
-Reports help teams export grievance, complaint, and concern data for leadership review, QAPI, operational follow-up, and survey preparation.
+Reports help teams export grievance data for leadership review, QAPI, operational follow-up, and survey preparation. Every report respects your role and facility access.
 
-Reports respect your role and facility access.
-
-## Create a report
+## Create a filtered report
 
 1. Open **Reports**.
 2. Select **New report**.
-3. Choose the grievance log report.
-4. Select the format: CSV, XLSX, or PDF.
-5. Choose filters such as facility, status, category, assignee, or date range.
-6. Start the report.
+3. Choose CSV, Excel, or PDF.
+4. Set the facility, date, status, category, F-tag, assignee, or other filters you need.
+5. Select **Generate Report**.
 
-## Generate from the grievance list
+The Reports table shows when a file is generating, ready, or failed.
 
-You can also generate a report from the grievance list.
+## Export selected grievances
 
-Two modes are available from the list or case action menus:
+From **All grievances**:
 
-- **Current view**: uses the current filters and includes all matching rows, not just the visible page.
-- **Selected rows**: includes only the selected grievances.
+1. Select one or more rows.
+2. Select **Export**.
+3. Choose CSV, Excel, or PDF.
+4. Generate the report.
 
-Use selected rows when you need a targeted packet for a specific review.
+Only the selected grievances are included. Their current list order is preserved.
 
-## Download a report
+## Print a summary or full report
 
-Reports may take a moment to generate. When the report is ready, select **Download**.
+After selecting grievance rows, choose **Print summary** instead of Export. You can generate:
 
-The reports table shows whether a report is generating, ready, or failed.
+- **Summary**: a concise printable case packet.
+- **Full Report (internal use only)**: a richer internal packet that includes additional case metadata and activity history.
 
-When a report finishes while you are working, the ready notification can also include a **Download** action.
+The action menu on an individual grievance also includes **Print summary**.
+
+Both print modes use PDF. Review the output before sharing it outside the facility's approved workflow.
 
 Open the notification bell to review recent report notifications. The notification panel keeps recent items for 30 days and can be filtered to unread notifications.
 
 ## Include attachments
 
-If available, choose the option to include attachments when you need the supporting case files in the export package.
+The print dialog can include attachment files with the PDF. When selected, the download is a ZIP package containing the report, eligible clean attachments, and an attachment manifest.
 
-When attachments are included, the download may be packaged as a ZIP file.
-
-Large attachment reports can take longer.
+Flagged, failed, or unavailable files are not included as downloadable attachment files. Large packages can take longer to generate.
 
 ## Report filters
 
-Grievance log reports can use filters such as:
+Filtered grievance log reports can use:
 
-- Facility.
-- Date range.
-- Status, including Open, Resolved, Overdue, and High Priority.
-- Category.
-- F-tag.
+- Facility and received-date range.
+- Status, including Pending Approval, Overdue, and High Priority.
+- Category and F-tag.
 - Assignee.
 - Other filters such as Has attachments, Public submission, Resident Council, employee involved, third party concern, or anonymous reporter.
-- Search text from the current grievance list.
 
-## Before sharing a report
+## Download a report
 
-Confirm the facility, date range, status filters, and included attachments. Reports may contain sensitive resident or reporter information, so share them only with approved team members.
+When a report is ready, use its download action in the Reports table. A ready notification may also provide a direct **Download** action.
+
+If a report fails, retry it or reduce the scope. Reports with many cases or attachments may take longer.
+
+## Before sharing
+
+Confirm the facility, date range, filters, print mode, and included attachments. Reports can contain sensitive resident, reporter, and case information, so share them only with approved people.

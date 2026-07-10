@@ -1,60 +1,63 @@
 ---
 title: "View and filter grievances"
-description: "Find grievances by facility, status, category, assignee, date, and search terms."
+description: "Find open or resolved grievances by status, label, assignee, date, source, attachments, and search terms."
 ---
 
-Use the grievance list to see open work, find older records, review complaint trends, and prepare for leadership or survey review.
+Use the grievance list to work open cases, find older records, and prepare for leadership or survey review.
 
-For sidebar queue shortcuts, see [Grievance queues](/grievance-log/grievance-queues).
+Use the app-wide facility switcher first when you need to change facility scope. Then use the list filters to narrow the results.
+
+## Open and resolved modes
+
+**All grievances** shows open grievances by default.
+
+Turn on **Show resolved grievances** to switch the list to resolved records. This is a separate resolved mode; it does not add resolved rows to the open list.
 
 For top bar search, recently viewed grievances, result previews, and search-side filters, see [Navigate and search](/getting-started/navigate-and-search).
 
 ## Filter the list
 
-Use filters to narrow the grievance list by:
+Available filters include:
 
-- Facility
-- Status: Pending Approval, Overdue, or High Priority
-- Category
-- F-tag
-- Assignee
-- Date range
-- Other filters, such as Has attachments, Public submission, Resident Council, employee involved, third party concern, or anonymous reporter
+- **Date range** over the received date.
+- **Status**: Pending Approval, Overdue, or High Priority. Open is the default list mode.
+- **Category**.
+- **F-tag**.
+- **Assignee**, including Me or Unassigned.
+- **Other**: Has attachments, Public submission, Submitted at Resident Council, Employee involved, Third party concern, or Anonymous reporter.
 
-Open grievances are shown by default. Use **Show resolved grievances** when you need resolved records.
+In resolved mode, High Priority can still be used to find resolved grievances that carried that marker.
 
-Use **Reset filters** to clear the current table filters while keeping the same queue view.
+Select **Reset filters** to clear page filters without changing a scoped queue such as My queue.
 
-## Search grievances
+## Read list signals
 
-Use search when you know part of the resident name, title, grievance ID, category, concern type, complaint description, or other visible case detail.
+The title column can show:
 
-The list search is tied to the current table view. For broader app-wide searching, use the top bar search.
+- A QR badge for a public submission.
+- A paperclip and count when attachments are present.
+- High Priority and Overdue markers.
 
-## Open a grievance
+The SLA column shows the due state, Pending Approval progress, or resolved date as appropriate.
 
-Select a grievance row to view its full case record, including details, follow-up, timeline entries, attachments, and resolution information.
+## Search the grievance list
 
-Rows can include title-prefix indicators for public submissions, attachments, High Priority, and overdue work.
+Search can match case identifiers and narrative information across the grievance record, including titles, resident or involved-person information, case notes, attachment information, resolution fields, and timeline activity.
+
+List search stays inside your facility access and the current open or resolved mode. For broader searching from anywhere in the app, use the top bar search.
 
 ## Sort the list
 
-The grievance list defaults to **Created** descending order.
+The default order is **Created**, newest first. Select **ID**, **Received**, **SLA**, or **Created** to sort by that column or change direction.
 
-The Created column shows that default sort state even when the URL does not include sort parameters.
+Sorting changes order only; it does not change which records match.
 
-You can also sort by received date, SLA, and grievance ID.
+## Open or select grievances
 
-## Export or print from the list
+Select a row to open the complete case record.
 
-The grievance list can generate reports, exports, and print summaries from the current filtered view or from selected rows.
+Use row checkboxes when you need a selected grievance export or printable PDF packet. Selected actions apply to the chosen records even when the table is paginated.
 
-When you generate from the current view, Grievly includes all matching rows, not just the visible page.
-
-When you generate from selected rows, only those selected grievances are included.
-
-Selecting one or more rows opens row actions for **Export** and **Print summary**.
-
-## Keep work moving
-
-Use the list to check which grievances still need ownership, follow-up, documentation, written decisions, or final resolution. Filtering by assignee and status is the fastest way to find stalled work.
+<Card title="Generate a grievance log report" icon="file-down" href="/reports/generate-a-report">
+  Export selected records or generate a printable summary or full report.
+</Card>

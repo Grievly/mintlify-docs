@@ -5,7 +5,9 @@ description: "Invite teammates and manage access to organizations and facilities
 
 Team access controls who can see and manage information in Grievly. Use the narrowest access that still lets each person do their job.
 
-Administrators can invite users, change roles, change facility scope, revoke pending invites, or remove users. Members can use Team as a read-only directory.
+Administrators can invite users, change roles and facility scope, manage notification preferences, revoke pending invites, or remove users.
+
+Members can view the team directory in their facility scope and invite new members into facilities they can access. They cannot invite administrators or change an existing user's access.
 
 For role definitions, see [Roles and permissions](/getting-started/roles-and-permissions).
 
@@ -19,6 +21,8 @@ For role definitions, see [Roles and permissions](/getting-started/roles-and-per
 
 Clerk sends the invitation. The invitee enters their name during signup.
 
+Administrators can invite either an admin or member. Members can invite only members and can select only facilities already in their own access scope.
+
 ## Choose a role
 
 Choose **Admin** when the user needs organization-wide setup or management access.
@@ -29,7 +33,7 @@ Admins ignore facility scope because they can access all facilities. Members mus
 
 ## Update access
 
-Use team settings to adjust facility access or role permissions when responsibilities change.
+Administrators use a teammate's detail page to adjust facility access or role permissions when responsibilities change.
 
 Review access when a user changes role, moves facilities, leaves the organization, or no longer needs grievance log visibility.
 
@@ -39,15 +43,16 @@ Administrators cannot change their own role or facility scope. Ask another admin
 
 Open **Team** to view people in the workspace.
 
-Administrators can see active users and pending invitations. Members see active teammates in their accessible facility scope.
+Administrators can see active users and pending invitations across the organization. Members see administrators and teammates who share their accessible facility scope.
 
 The team table can show:
 
 - Name and email.
-- Facility access, for administrators.
 - Department assignments.
-- Role, for administrators.
-- Invite status, for administrators.
+- Role.
+- Facility access, for administrators.
+- Last signed-in time, for administrators.
+- Invite status when an invitation is pending.
 
 Select an active teammate to open the detail page. Invited users stay in the table until they accept the invite or an administrator revokes it.
 
@@ -55,13 +60,15 @@ Select an active teammate to open the detail page. Invited users stay in the tab
 
 Use search to find a teammate by name or email.
 
-Administrators can also filter by:
+The directory can also filter by:
 
 - Facility.
 - Role.
 - Status, including Active and Invited.
 
 Team filters are saved in the page URL, so refresh, back/forward navigation, and shared links keep the same view. Use **Reset filters** to clear the current search and filters.
+
+Administrators can sort the table by **Last signed in**.
 
 ## Departments
 
@@ -75,11 +82,21 @@ Departments are managed from the facility's **Departments** tab. Department assi
 
 Invited users appear in the team table with an **Invited** badge until they accept the invitation and sign in.
 
-Administrators can revoke a pending invite. Revoking an invite removes the pending user row and stops the invitation link from working.
+Administrators can revoke a pending invite. Revoking removes the pending user row and stops the invitation link from working.
+
+## Notification preferences
+
+Administrators can open a teammate and use the **Notifications** tab to manage:
+
+- New-grievance notifications by facility.
+- Assignment emails.
+- Overdue-grievance notifications.
+
+Members manage their own preferences from **Settings > Notifications**.
 
 ## Remove a user
 
-Deleting a user removes their access to the workspace.
+Only administrators can remove an active user. Deleting a user removes their access to the workspace.
 
 Past grievances they created, were assigned to, or participated in still show their name for audit history.
 

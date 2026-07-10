@@ -1,124 +1,92 @@
 ---
-title: "Manage facilities"
-description: "Create facilities, configure locations and departments, manage public intake, and archive or restore facilities."
+title: "Manage facility operations"
+description: "Review provisioned facilities, configure operational settings, and share public intake links and QR assets."
 ---
 
 Facilities control where grievances are assigned, filtered, reported, and reviewed.
 
-Only administrators can create, edit, archive, restore, or configure facilities.
+Grievly provisions facilities and maintains their profile and activation status. In the product app, administrators configure day-to-day facility operations; members can review information for facilities they can access.
 
-Set up facilities before inviting most users or sharing intake links. This keeps grievance records tied to the correct location from the start.
-
-## Add a facility
-
-1. Open **Facilities** from the sidebar.
-2. Select **New facility**.
-3. Enter the facility name and required details.
-4. Save the facility.
-
-## Edit a facility
+## Find a facility
 
 1. Open **Facilities**.
-2. Select the facility.
-3. Choose **Edit**.
-4. Update the details and save.
+2. Search by facility name, location, or CMS provider number when needed.
+3. Select a facility to open it.
+
+Only active facilities appear in this list. Contact your Grievly account manager to add a facility, change its profile, or change its activation status.
 
 ## Why facilities matter
 
 Facilities are used throughout Grievly for:
 
-- Grievance routing
-- Dashboard filters
+- Grievance routing and visibility
+- Dashboard and analytics scope
 - Reports
 - Public intake links
-- Team access and visibility
+- Team access
 - Locations and departments
-- Patterns and analytics
+- Patterns
 
 ## Facility tabs
 
 Each facility has four tabs: **Details**, **Locations**, **Departments**, and **Configuration**.
 
-| Tab | Main job | Admin-only actions |
+| Tab | What it contains | Who can change it |
 | --- | --- | --- |
-| Details | Facility facts, resolution approvals, and public intake | Edit details, configure required signers, copy link, download QR poster |
-| Locations | Units, rooms, and areas | Create, rename, move, bulk create, bulk delete |
-| Departments | Routing groups | Create, edit, assign members, delete |
-| Configuration | Facility SLA and lifecycle | Change default grievance SLA, archive, or restore |
+| Details | Facility facts, resolution approvals, and public intake | Admins configure approvals; the facility profile is read-only |
+| Locations | Units, rooms, and areas | Admins |
+| Departments | Routing groups and assigned members | Admins |
+| Configuration | Default grievance SLA | Admins |
+
+Members can review these tabs for facilities they can access.
 
 ### Details
 
-Use **Details** to review or update the facility name, city, state, bed count, and CMS provider number.
+The facility profile shows the city, state, bed count, and CMS provider number. These fields are read-only in the product app.
 
-Administrators can also configure **Resolution approvals** on this tab.
-
-Resolution approvals let a facility require specific people to sign off before a grievance resolution is completed. When enabled, users submit the resolution for approval instead of resolving directly. Every required signer captured at submission time must approve, unless an administrator explicitly bypasses remaining approvals.
-
-To configure approvals:
+Administrators can configure **Resolution approvals** on this tab:
 
 1. Turn on **Require resolution approvals**.
 2. Select one or more required signers.
 3. Save the setting.
 
-Only users with access to the facility can be selected as signers. Organization admins can also be selected.
+Only people with access to the facility can be selected. Organization admins are also eligible because they can access every facility. The signer list is captured when a resolution is submitted, so later setting changes apply to new requests.
 
 <Note>
-  Approvals cannot be enabled without at least one required signer. If approvals are off, the facility keeps the standard direct resolution workflow.
+  Approvals cannot be enabled without at least one required signer. If approvals are off, the facility uses direct resolution.
 </Note>
 
-The public intake panel is also on this tab for administrators. It shows the permanent intake URL, QR code, last-used information, and poster download.
-
-Members can view basic facility details when they have access, but administrator access is required to manage details and public intake links.
+The **Public intake** panel shows the permanent intake URL, QR code, last-used time, and download actions. Users with access to the facility can copy the URL or download a poster or QR PNG.
 
 <Card title="Resolution approvals" icon="shield-check" href="/grievance-log/resolution-approvals">
-  Review the full approval workflow, including self-approval, admin bypass, cancel and resubmit, and reopen behavior.
+  Review the approval workflow, including self-approval, admin bypass, cancellation, and reopening.
 </Card>
 
 ### Locations
 
-Use **Locations** to manage reference data for units, rooms, and areas.
+Locations are reference data for units, rooms, common areas, and other facility locations. They populate intake fields while each grievance keeps its own point-in-time resident room and unit values.
 
-Locations populate intake and grievance location fields. They do not replace the point-in-time resident room and unit snapshots kept on each grievance.
+Administrators can:
 
-Common location work:
-
-- Create a unit.
-- Create rooms or areas inside a unit.
-- Create standalone rooms or areas.
-- Search locations.
+- Create a unit, room, or standalone area.
+- Search and rename locations.
 - Move rooms or areas between units.
-- Rename locations.
-- Bulk create rooms.
-- Bulk move or delete locations.
+- Bulk create, move, or delete locations.
 
-Do not delete or rename locations casually if staff rely on them for consistent intake.
+Review changes carefully when staff rely on these names for consistent intake.
 
 ### Departments
 
-Use **Departments** to create facility-specific routing groups.
+Departments are facility-specific routing groups such as Nursing, Dietary, Maintenance, Social Services, or Administration.
 
-Departments can have assigned members. A member must have access to the facility before they can be assigned to one of its departments. Admins can be selected because admins have organization-wide access.
-
-Departments are useful for routing work to Nursing, Dietary, Maintenance, Social Services, Administration, or other facility teams.
+Administrators can create departments and assign members. A member must already have access to the facility before being assigned to one of its departments. Department membership can affect intake routing and notifications.
 
 ### Configuration
 
-Use **Configuration** to set the facility's default grievance SLA and manage facility lifecycle.
+The **Grievance SLA** controls the due-date window for new grievances at the facility. Administrators enter the value in hours.
 
-The **Grievance SLA** setting controls the due date window for new grievances at that facility. The value is measured in hours from the received time.
+Changing the SLA affects new grievances only. Existing due dates and timeline history are not rewritten.
 
-To update the SLA:
+## If a facility is missing
 
-1. Open the facility's **Configuration** tab.
-2. Enter the default SLA length in hours.
-3. Save the change.
-
-Changing the SLA affects new grievances only. Existing grievance due dates are not rewritten.
-
-Archiving keeps historical records available, but removes the facility from new intake, public intake, and new grievance assignment until it is restored.
-
-Restoring makes the facility available again for new work.
-
-## Naming facilities
-
-Use the facility name your team recognizes in daily work and reporting. If the legal name differs from the operating name, choose the name that will make the grievance log easiest for staff to search and review.
+First confirm that you are in the correct organization. Members should ask an administrator to confirm their facility access. If the facility has not been provisioned or activated, contact your Grievly account manager.

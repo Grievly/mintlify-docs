@@ -1,6 +1,6 @@
 ---
 title: "Work a grievance case"
-description: "Use the grievance detail page to review, update, comment on, and resolve a case."
+description: "Use the grievance detail page to review, update, add case notes to, and resolve a case."
 ---
 
 The grievance detail page is the working record for a case.
@@ -8,7 +8,7 @@ The grievance detail page is the working record for a case.
 It has three main areas:
 
 - **Header** for title, display ID, status, High Priority, and case actions.
-- **Timeline** for the original submission, AI summary, comments, activity, attachments, and resolution prompts.
+- **Timeline** for the intake record, AI summary, case notes, activity, attachments, and resolution prompts.
 - **Right rail** for notifications, case metadata, pattern membership, attachments, and participants.
 
 Breadcrumbs and page context appear inside the page content so the working case record stays close to the top of the detail page.
@@ -18,16 +18,16 @@ Breadcrumbs and page context appear inside the page content so the working case 
 | Area | What it contains |
 | --- | --- |
 | Header | Title, grievance ID, status, High Priority, and case actions |
-| Timeline | Original submission, AI summary, comments, activity, attachments, and resolution prompts |
+| Timeline | Intake record, AI summary, case notes, activity, attachments, and resolution prompts |
 | Right rail | Notifications, metadata, patterns, attachments, and participants |
 
 ## Header
 
 The header shows the case title, grievance ID, current status, and created or resolved context.
 
-Use the three-dot action menu to print a summary, edit the title on open grievances, or delete the grievance if you are an administrator.
+Use the three-dot action menu to print a summary or edit the title on an unlocked grievance.
 
-Admins can reopen resolved grievances.
+Administrators can also delete an unresolved grievance. Resolved grievances cannot be deleted.
 
 ## Timeline
 
@@ -35,33 +35,37 @@ Use the timeline to understand what happened and what has changed.
 
 The timeline can include:
 
-- The opening **Grievance submitted** item with a **View original submission** button.
+- The opening submission item with an **Intake record** link.
 - AI summary and suggested labels.
 - System events such as assignment, category, F-tag, status, attachment, and resolution changes.
-- Comments.
+- Case notes.
 - Attachment entries.
 - Resolution call-to-action when the case is still open.
 - Resolution approval panels when the facility requires sign-off before completion.
 
-## Original submission
+## Intake record
 
-Select **View original submission** from the opening timeline item to review the full intake packet.
+Select **Intake record** from the opening timeline item to review the full source packet.
 
-The dialog opens in view mode. On open, unlocked grievances, select the pencil icon to correct intake details such as resident information, reporter contact details, occurrence date, employee involvement, or the original concern text.
+Internal intake records open in view mode. On an unlocked grievance, select the pencil icon to correct details such as facility, resident or reporter information, occurrence date, employee involvement, or the original concern text.
 
-Resolved grievances and grievances pending resolution approval are locked and cannot be edited from this dialog.
+Public intake records are always read-only so the submitter's original intent is preserved. Resolved grievances and grievances pending resolution approval are also locked.
 
-<Card title="Edit an original submission" icon="pencil" href="/grievance-log/edit-original-submission">
-  Follow the step-by-step edit flow and learn which fields can be corrected.
+<Card title="Edit an internal intake record" icon="pencil" href="/grievance-log/edit-original-submission">
+  Follow the internal intake edit flow and learn why public packets remain read-only.
 </Card>
 
-## Comments
+## Case notes
 
-Use comments for follow-up notes, investigation updates, review notes, and coordination.
+Use case notes for investigation updates, follow-up, review notes, and coordination.
 
 Use `@` to mention a teammate. Use `#` to reference another grievance.
 
-Comments may contain sensitive case information. Keep the full case record in Grievly and avoid copying PHI into outside tools.
+On an unlocked grievance, a case-note author can edit or delete their own note. Edited notes are marked as edited.
+
+The sparkle control can improve the wording of a draft note. Accept or dismiss the suggestion, then save the note normally; AI never saves it for you.
+
+Case notes may contain sensitive case information. Keep the full record in Grievly and avoid copying PHI into outside tools.
 
 ## Right rail
 
@@ -70,7 +74,7 @@ The right rail keeps the most important reference information visible while you 
 | Rail panel | Use it for |
 | --- | --- |
 | Notifications | Subscribe or unsubscribe from future activity |
-| Case metadata | Review source, due date, resident, reporter, assignee, F-tag, and category |
+| Case metadata | Review assignee, status and due date, resident, reporter, involved employees, F-tag, and category |
 | Pattern membership | Open related patterns when the grievance is part of one |
 | Attachments | Upload and review supporting files |
 | Participants | See people who have touched the case |
@@ -81,13 +85,13 @@ Subscribe to receive future case activity notifications. Unsubscribe when you no
 
 ### Case metadata
 
-Review facility, status, due date, source, filed date, resident, reporter, reporter contact details, assignee, F-tag, and category.
+Review assignee, status and due date, resident, reporter details, involved employees, F-tag, and category.
 
-Assignee and category can be edited while the grievance is open. F-tag override is admin-only.
+Assignee, category, and F-tag can be edited while the grievance is open and not pending approval.
 
 ### Pattern membership
 
-If the grievance belongs to a pattern, the rail links to that pattern. Patterns are clusters of similar grievances found by Grievly.
+If the grievance belongs to a pattern, select it to open the pattern details over the case. A grievance can belong to more than one pattern.
 
 ### Attachments
 
@@ -99,19 +103,23 @@ If an attachment may not match the concern, Grievly shows a warning and keeps th
 
 ### Participants
 
-Participants summarize people who have touched the case, such as commenters, assignees, or people involved in status changes.
+Participants summarize people who have touched the case, such as case-note authors, assignees, attachment uploaders, subscribers, or people involved in status changes.
 
 ## Resolved cases
 
-After a grievance is resolved, most editing controls are disabled. This preserves the case record.
+After a grievance is resolved, existing notes, attachments, intake details, labels, assignment, and resolution fields are read-only.
 
-If new information arrives, an admin can reopen the grievance and continue the timeline.
+Administrators can append a new case note or attachment without reopening the grievance. The new item becomes part of the post-resolution record, but existing notes and attachments remain read-only.
+
+Any user who can access the grievance can reopen it when more work is needed. Choose a reason and add context when useful; the reason appears on the timeline. Reopening preserves the original due date and history.
 
 ## Pending resolution approval
 
 Some facilities require selected signers to approve a resolution before the grievance is completed.
 
-When a grievance is pending approval, the timeline shows the required signers and their signed or pending state. Resolution edits and attachments are locked while the request is pending, but comments remain available for discussion.
+When a grievance is pending approval, the timeline shows required signers and their signed or pending state. Resolution fields, existing case notes, and existing attachments are read-only.
+
+Users with case access can add a new attachment while approval is pending. Administrators can also append a case note. Cancel the approval request before changing the resolution or editing existing case content.
 
 <Card title="Resolution approvals" icon="shield-check" href="/grievance-log/resolution-approvals">
   Learn the approval workflow, including self-approval, admin bypass, cancel and resubmit, and reopen behavior.
