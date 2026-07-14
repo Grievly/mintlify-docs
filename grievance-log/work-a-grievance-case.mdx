@@ -1,138 +1,65 @@
 ---
 title: "Work a grievance case"
-description: "Use the grievance detail page to review, update, add case notes to, and resolve a case."
+description: "Review the intake record, document work, manage the case, and prepare a resolution."
 ---
 
 The grievance detail page is the working record for a case.
 
-It has three main areas:
+<Frame caption="A grievance case has a header, chronological timeline, and right-hand reference rail.">
+  <img src="/images/grievance-case-anatomy.webp" alt="Grievance detail page with the case timeline and metadata rail" />
+</Frame>
 
-- **Header** for title, display ID, status, High Priority, and case actions.
-- **Timeline** for the intake record, AI summary, case notes, activity, attachments, and resolution prompts.
-- **Right rail** for notifications, case metadata, pattern membership, attachments, and participants.
+## Page anatomy
 
-Breadcrumbs and page context appear inside the page content so the working case record stays close to the top of the detail page.
+- **Header:** title, grievance ID, status, SLA context, and case actions.
+- **Timeline:** intake record, AI summary, case notes, activity, attachments, and resolution actions.
+- **Right rail:** subscription, assignee, due date, resident and reporter details, labels, patterns, attachments, and participants.
 
-## Case anatomy
+Use the three-dot header menu to print a summary or edit the title of an unlocked grievance. Administrators can delete an unresolved grievance; resolved grievances cannot be deleted.
 
-| Area | What it contains |
-| --- | --- |
-| Header | Title, grievance ID, status, High Priority, and case actions |
-| Timeline | Intake record, AI summary, case notes, activity, attachments, and resolution prompts |
-| Right rail | Notifications, metadata, patterns, attachments, and participants |
+## Work the case
 
-## Header
+1. Open **Intake record** to review the original submission.
+2. Confirm the assignee, category, F-tag, and due context in the right rail.
+3. Add case notes for investigation, follow-up, review, and coordination.
+4. Upload supporting files from the Attachments panel.
+5. Resolve the grievance, or submit it for approval when the facility requires sign-off.
 
-The header shows the case title, grievance ID, current status, and created or resolved context.
+Use `@` in a case note to mention a teammate and `#` to reference another grievance. Authors can edit or delete their own notes while the case is unlocked. The sparkle control can improve a draft note, but it never saves the note for you.
 
-Use the three-dot action menu to print a summary or edit the title on an unlocked grievance.
+Keep PHI in the Grievly case record and approved attachments rather than copying it into outside tools.
 
-Administrators can also delete an unresolved grievance. Resolved grievances cannot be deleted.
+## Intake and guidance
 
-## Timeline
+An unlocked internal intake record can be corrected from its pencil action. Public submissions remain read-only so the submitter's original packet is preserved. Pending-approval and resolved records are also locked.
 
-Use the timeline to understand what happened and what has changed.
+When an open grievance has an F-tag, the AI summary can show advisory **Suggested next steps** connected to federal Appendix PP guidance. Expanding the list or opening its source does not change the case or assign work.
 
-The timeline can include:
+## Right-rail controls
 
-- The opening submission item with an **Intake record** link.
-- AI summary, suggested labels, connected F-tag guidance, and advisory next steps.
-- System events such as assignment, category, F-tag, status, attachment, and resolution changes.
-- Case notes.
-- Attachment entries.
-- Resolution call-to-action when the case is still open.
-- Resolution approval panels when the facility requires sign-off before completion.
+Subscribe when you need future activity notifications. Assignment, category, and F-tag can be updated while the grievance is open and not pending approval.
 
-## Guidance and suggested next steps
+Attachments show scan state before Open or Download becomes available. Supported files may also include an AI summary; when the file may not match the concern, Grievly keeps that summary collapsed behind a warning.
 
-When an open grievance has an F-tag, the AI summary can connect the case to federal Appendix PP guidance and automatically prepare a **Suggested next steps** list. The list is collapsed by default; expand it to review the steps or open the supporting guidance.
+The Participants panel summarizes people who have touched the case. Pattern membership links open the related pattern without leaving the grievance.
 
-These suggestions are advisory. They do not change the case, assign work, or move the grievance toward resolution.
+## Locked case states
 
-<Card title="Regulatory guidance" icon="book-open-check" href="/triage-and-labels/regulatory-guidance">
-  Learn how the guidance tabs, open-case suggestions, and post-resolution review work.
-</Card>
+While resolution approval is pending, existing resolution fields, notes, attachments, and intake details are read-only. Users with case access may add an attachment, and administrators may append a case note. Cancel the approval request before changing existing case content.
 
-## Intake record
+After resolution, the existing case is read-only. Administrators may append a new note or attachment, and any user with case access can reopen the grievance when more work is required. Reopening preserves history and the original due date.
 
-Select **Intake record** from the opening timeline item to review the full source packet.
-
-Internal intake records open in view mode. On an unlocked grievance, select the pencil icon to correct details such as facility, resident or reporter information, occurrence date, employee involvement, or the original concern text.
-
-Public intake records are always read-only so the submitter's original intent is preserved. Resolved grievances and grievances pending resolution approval are also locked.
-
-<Card title="Edit an internal intake record" icon="pencil" href="/grievance-log/edit-original-submission">
-  Follow the internal intake edit flow and learn why public packets remain read-only.
-</Card>
-
-## Case notes
-
-Use case notes for investigation updates, follow-up, review notes, and coordination.
-
-Use `@` to mention a teammate. Use `#` to reference another grievance.
-
-On an unlocked grievance, a case-note author can edit or delete their own note. Edited notes are marked as edited.
-
-The sparkle control can improve the wording of a draft note. Accept or dismiss the suggestion, then save the note normally; AI never saves it for you.
-
-Case notes may contain sensitive case information. Keep the full record in Grievly and avoid copying PHI into outside tools.
-
-## Right rail
-
-The right rail keeps the most important reference information visible while you work the case.
-
-| Rail panel | Use it for |
-| --- | --- |
-| Notifications | Subscribe or unsubscribe from future activity |
-| Case metadata | Review assignee, status and due date, resident, reporter, involved employees, F-tag, and category |
-| Pattern membership | Open related patterns when the grievance is part of one |
-| Attachments | Upload and review supporting files |
-| Participants | See people who have touched the case |
-
-### Notifications
-
-Subscribe to receive future case activity notifications. Unsubscribe when you no longer need updates.
-
-### Case metadata
-
-Review assignee, status and due date, resident, reporter details, involved employees, F-tag, and category.
-
-Assignee, category, and F-tag can be edited while the grievance is open and not pending approval.
-
-### Pattern membership
-
-If the grievance belongs to a pattern, select it to open the pattern details over the case. A grievance can belong to more than one pattern.
-
-### Attachments
-
-Upload and review supporting files from the rail. Attachments can also appear in the timeline.
-
-Timeline attachment cards show scan state, Open and Download actions when the file is available, and an AI summary panel when supported.
-
-If an attachment may not match the concern, Grievly shows a warning and keeps the full AI summary collapsed until you expand it.
-
-### Participants
-
-Participants summarize people who have touched the case, such as case-note authors, assignees, attachment uploaders, subscribers, or people involved in status changes.
-
-## Resolved cases
-
-After a grievance is resolved, existing notes, attachments, intake details, labels, assignment, and resolution fields are read-only.
-
-If the grievance has an F-tag, the resolution panel automatically prepares a collapsed **Compliance review** on first view. The alignment result remains visible in the header; expand it to read the assessment and any gaps. Its advisory result does not change or reopen the grievance.
-
-Administrators can append a new case note or attachment without reopening the grievance. The new item becomes part of the post-resolution record, but existing notes and attachments remain read-only.
-
-Any user who can access the grievance can reopen it when more work is needed. Choose a reason and add context when useful; the reason appears on the timeline. Reopening preserves the original due date and history.
-
-## Pending resolution approval
-
-Some facilities require selected signers to approve a resolution before the grievance is completed.
-
-When a grievance is pending approval, the timeline shows required signers and their signed or pending state. Resolution fields, existing case notes, and existing attachments are read-only.
-
-Users with case access can add a new attachment while approval is pending. Administrators can also append a case note. Cancel the approval request before changing the resolution or editing existing case content.
-
-<Card title="Resolution approvals" icon="shield-check" href="/grievance-log/resolution-approvals">
-  Learn the approval workflow, including self-approval, admin bypass, cancel and resubmit, and reopen behavior.
-</Card>
+<CardGroup cols={2}>
+  <Card title="Mentions and notifications" icon="bell" href="/grievance-log/mentions-and-notifications">
+    Coordinate through mentions, references, and subscriptions.
+  </Card>
+  <Card title="Attachments" icon="paperclip" href="/grievance-log/attachments">
+    Review upload limits, scanning, and file summaries.
+  </Card>
+  <Card title="Resolve a grievance" icon="circle-check" href="/grievance-log/resolve-a-grievance">
+    Complete findings, actions, outcome, and report-back.
+  </Card>
+  <Card title="Resolution approvals" icon="shield-check" href="/grievance-log/resolution-approvals">
+    Understand required signers and pending approval behavior.
+  </Card>
+</CardGroup>
