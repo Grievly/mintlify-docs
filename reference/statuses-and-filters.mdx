@@ -17,6 +17,8 @@ Resolved grievances have a completed resolution record.
 
 Resolved cases are read-only in most areas. Any user who can access a case can reopen it when more work is needed. Reopening requires a reason and preserves the original due date and history.
 
+The resolved list is ordered by resolution finalization time by default. This is the system-recorded time the grievance actually became resolved, which is separate from the operator-entered **Outcome date** in the resolution packet.
+
 ### Pending approval
 
 Pending approval means the grievance has been submitted for resolution approval and required signers have not all signed yet.
@@ -67,7 +69,7 @@ The grievance list can filter by:
 - Third party concern.
 - Anonymous reporter.
 
-Open is the default mode and Resolved uses the separate switch. In resolved mode, High Priority can still narrow resolved records that carried that marker.
+Open is the default mode and Resolved uses the separate switch. In resolved mode, the **Status** filter can narrow records by High Priority or by the advisory compliance-review results Aligned, Minor gaps, and Significant gaps.
 
 ## Search
 
@@ -79,7 +81,7 @@ The top bar search also supports recently viewed grievances, result previews, an
 
 ## Sorting
 
-The grievance list defaults to Created, newest first. Sortable headers include ID, Received, SLA, and Created.
+The open grievance list defaults to Created, newest first. The resolved list defaults to Resolved, newest finalization first. Sortable headers include ID, Received, Due or Resolved depending on the current mode, and Created.
 
 Sorting changes the order of results. It does not change which records match the current filters.
 

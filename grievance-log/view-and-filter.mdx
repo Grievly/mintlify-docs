@@ -17,7 +17,7 @@ For top bar search, recently viewed grievances, result previews, and search-side
 
 ## Filter the list
 
-Available filters include:
+Available filters in open mode include:
 
 - **Date range** over the received date.
 - **Status**: Pending Approval, Overdue, or High Priority. Open is the default list mode.
@@ -26,7 +26,7 @@ Available filters include:
 - **Assignee**, including Me or Unassigned.
 - **Other**: Has attachments, Public submission, Submitted at Resident Council, Employee involved, Third party concern, or Anonymous reporter.
 
-In resolved mode, High Priority can still be used to find resolved grievances that carried that marker.
+In resolved mode, the **Status** filter includes High Priority plus the advisory compliance-review results **Aligned**, **Minor gaps**, and **Significant gaps**. These review results appear only for resolved grievances with a current review for their selected F-tag.
 
 Select **Reset filters** to clear page filters without changing a scoped queue such as My queue.
 
@@ -38,7 +38,7 @@ The title column can show:
 - A paperclip and count when attachments are present.
 - High Priority and Overdue markers.
 
-The SLA column shows the due state, Pending Approval progress, or resolved date as appropriate.
+In open mode, the **Due** column shows the SLA due state and any Pending Approval progress. In resolved mode, the **Resolved** column shows when the grievance was finalized and, when available, its advisory compliance-review result.
 
 ## Search the grievance list
 
@@ -48,7 +48,9 @@ List search stays inside your facility access and the current open or resolved m
 
 ## Sort the list
 
-The default order is **Created**, newest first. Select **ID**, **Received**, **SLA**, or **Created** to sort by that column or change direction.
+Open grievances default to **Created**, newest first. Resolved grievances default to **Resolved**, newest finalization first.
+
+Select **ID**, **Received**, **Due** or **Resolved** as appropriate for the current mode, or **Created** to change the sort column or direction.
 
 Sorting changes order only; it does not change which records match.
 
