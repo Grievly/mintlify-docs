@@ -1,121 +1,62 @@
 ---
 title: "Mentions and notifications"
-description: "Use @mentions, grievance references, subscriptions, and notifications to keep the right people informed."
+description: "Use mentions, grievance references, subscriptions, and notifications to keep teammates informed."
 ---
 
-Mentions and subscriptions help the right people stay aware of grievance activity without sending separate messages outside Grievly.
-
-Use them when a teammate needs to review a case, when one grievance is related to another, or when you want to receive updates on future case activity.
+Use case-note mentions and subscriptions when someone needs attention on a grievance or ongoing updates.
 
 ## Mention a teammate
 
-Use an `@` mention in a case note when a specific teammate needs attention on the grievance.
+1. Start a case note.
+2. Type `@` and choose the teammate.
+3. Finish and add the note.
 
-1. Open the grievance.
-2. Start a case note.
-3. Type `@`.
-4. Choose the teammate from the list.
-5. Add the note.
-
-The mentioned teammate receives an in-app notification and, when email is available for that user, an email notification. They are also subscribed to the grievance so future activity can reach them.
+The teammate receives an in-app notification and, when email is available, an email. They are also subscribed to future case activity.
 
 <Note>
-  Mention only people who need access to the case. A user still needs the right organization and facility access to view the grievance.
+  A mention does not grant access. The teammate still needs access to the organization and facility.
 </Note>
 
 ## Reference another grievance
 
-Use a `#` reference in a case note when another grievance is related to the current one.
+Type `#` in a case note and choose the related grievance. The reference becomes a link, and the referenced grievance receives a timeline event pointing back to the current case.
 
-1. Open the grievance.
-2. Start a case note.
-3. Type `#`.
-4. Search for and choose the grievance to reference.
-5. Add the note.
+Use references for repeat concerns, related submissions, follow-up cases, or records leadership should review together.
 
-Referenced grievances appear as clickable links. The referenced grievance also receives a timeline entry showing that it was mentioned from the current grievance.
+## Subscribe to a case
 
-This is useful for:
+Use **Notifications** in the grievance right rail to subscribe or unsubscribe. A subscription can notify you when someone else adds a note, changes assignment or status, updates labels, adds an attachment, changes the resolution, or references the grievance.
 
-- Repeat concerns from the same facility
-- Related public intake submissions
-- Follow-up grievances tied to a prior investigation
-- Cases that should be reviewed together during leadership or survey preparation
+Grievly automatically subscribes active participants, including the creator, assignee, note authors, and mentioned teammates. If you unsubscribe and later participate again, Grievly may subscribe you again.
 
-## Subscribe to a grievance
-
-The grievance detail sidebar includes a **Notifications** section. Use it to subscribe or unsubscribe from activity on that grievance.
-
-When you are subscribed, you can receive notifications for future activity performed by someone else, such as new case notes, assignment changes, resolution changes, attachment updates, F-tag updates, category updates, and grievance cross-references.
-
-Editing an existing case note does not send another activity notification.
-
-If you unsubscribe, Grievly stops sending subscription-based activity notifications for that grievance. If you later take part in the grievance again, Grievly may subscribe you again because you are active on the case.
-
-## Automatic subscriptions
-
-Grievly automatically subscribes people who are actively involved in a grievance.
-
-You may become subscribed when you:
-
-- Create the grievance
-- Add a case note
-- Are assigned to the grievance
-- Are mentioned in a case note
-- Update or otherwise participate in the grievance
-
-This keeps the case audience current without requiring someone to manually manage a subscriber list.
-
-## What notifications and emails are sent
-
-Grievly uses both the in-app notification bell and email when email delivery is available.
-
-| Event | Who is notified |
-| --- | --- |
-| You are assigned to a grievance | You receive an assignment notification. |
-| You are mentioned with `@` in a case note | You receive a mention notification. |
-| Someone else updates a grievance you are subscribed to | You receive an activity notification. |
-| A grievance is created for a facility where notifications are enabled for you | You may receive a new-grievance notification. |
-| A grievance is routed to one of your departments | You may receive a department notification. |
-| Another grievance references a grievance you are subscribed to | You receive an activity notification on the referenced grievance. |
-
-Grievly does not send an activity email to the person who performed the action. For example, if you add a case note to a grievance you follow, other subscribers may be notified, but you do not receive an email about your own note.
-
-## Notification preferences
-
-Select your avatar in the upper-right corner, choose **Account settings**, and open **Notifications** to choose:
-
-- Facilities where new-grievance notifications should be sent.
-- Whether to receive assignment emails.
-- Whether to receive overdue-grievance notifications for accessible facilities, even when you are not assigned.
-
-Administrators can manage the same preferences for another user from **Team > user > Notifications**.
+Editing an existing case note does not send another activity notification. Grievly also avoids emailing you about an action you performed yourself.
 
 ## Use the notification bell
 
-The notification bell in the top bar opens a notification panel.
+The bell shows activity from the last 30 days. From the panel you can:
 
-Use the panel to:
+- Show unread notifications only.
+- Open the related grievance, report, or destination.
+- Mark one notification read or unread.
+- Mark all notifications read.
+- Open **Manage notifications**.
 
-- Review notifications from the last 30 days.
-- Toggle **Unread only**.
-- Open the grievance, report, or destination connected to a notification.
-- Open a case-note notification at the referenced note when available.
-- Mark a notification read or unread.
-- Use the action menu to mark all notifications read or open **Manage notifications**.
+Opening a notification with a destination marks it read. Case-note notifications open at the referenced note when available. The unread badge is capped at **99+**.
 
-The badge shows unread notifications and caps large counts as **99+**.
+## Choose email preferences
 
-When you open a notification that has a destination, Grievly marks it read and takes you to the relevant record.
+Select your avatar, choose **Account settings**, and open **Notifications**. Choose facilities for new-grievance email and whether to receive assignment or overdue-grievance email.
 
-## Email content
+<Frame caption="Personal notification preferences live inside Account settings.">
+  <img src="/images/notification-settings.webp" alt="Grievly notification preferences for new grievances, assignments, and overdue cases" />
+</Frame>
 
-Notification emails are intentionally brief. They identify the grievance, facility, action, and a link back to Grievly.
+Administrators can manage the same choices for a teammate from **Team > user > Notifications**.
 
-Do not rely on notification emails as the full case record. The complete grievance details, case notes, attachments, and resolution documentation remain inside Grievly.
+## Keep the case as the source of truth
 
-Outbound notification emails omit case-note text and full grievance narratives. The in-app notification center may show authorized case-note context, but the grievance remains the source of truth.
+Email notifications identify the grievance, facility, action, and link back to Grievly. They omit case-note text and full grievance narratives. Review the complete case in Grievly rather than treating an email as the record.
 
 <Card title="Notification preferences" icon="settings" href="/settings/notifications">
-  Configure new-grievance, assignment, and overdue email preferences.
+  Review each personal and administrator-managed email preference.
 </Card>

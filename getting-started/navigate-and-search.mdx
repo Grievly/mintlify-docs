@@ -1,116 +1,63 @@
 ---
 title: "Navigate and search"
-description: "Use the top bar, sidebar, facility switcher, global search, notifications, and help menu."
+description: "Use the sidebar, top bar, facility scope, search, notifications, and account menu."
 ---
 
-Grievly keeps daily work in two places: the top bar for fast actions and the sidebar for primary navigation.
+The sidebar moves you between work areas. The top bar keeps common actions available everywhere.
 
-## App layout
+<Frame caption="The dashboard with primary navigation, global search, facility scope, notifications, and account controls.">
+  <img src="/images/dashboard-overview.webp" alt="Grievly dashboard showing the sidebar and top navigation" />
+</Frame>
 
-The top bar stays visible as you move through the app.
+## Move around
 
-Use it to:
+Use the sidebar for the Dashboard, grievance queues, Insights, Reports, Team, and Facilities. What appears depends on your role.
+
+Use the top bar to:
 
 - Search grievances.
-- Select **Create** to open the new grievance composer.
-- Switch facility scope.
-- Open notifications.
-- Contact support, give feedback, report a bug, or open docs from the help menu.
-- Open your account, switch workspaces when available, or sign out from the avatar menu.
+- Open the **New grievance** composer from **Create**.
+- Change facility scope.
+- Review notifications or open help.
+- Manage your account from your avatar.
 
-The sidebar contains the main navigation and queue shortcuts, including Dashboard, grievance queues, Reports, Assistant, Insights, Team, and Facilities depending on your role.
+On smaller screens, the navigation and search controls collapse into icons.
 
-On smaller screens, use the navigation button in the top bar to open the sidebar.
+## Change facility scope
 
-## Account and workspace menu
+The facility switcher changes the scope for dashboard metrics, grievance lists, search defaults, reports, and setup screens.
 
-Select your avatar in the upper-right corner to open the account menu.
-
-- **Account settings** opens your profile, security, notification, and appearance pages in one modal.
-- **Switch workspace** opens the organization picker when your account belongs to more than one organization.
-- **Sign out** ends your session.
-
-The workspace action is hidden for accounts with only one organization. Organization creation is handled by Grievly rather than from this menu.
-
-<Card title="Account and appearance" icon="circle-user-round" href="/settings/account-and-appearance">
-  Review personal account settings, Light and Dark appearance, and workspace switching.
-</Card>
-
-## Facility scope
-
-Use the facility switcher in the top bar to choose the facility context for your work.
-
-The selected facility scope affects dashboard metrics, grievance lists, search defaults, reports, and setup screens.
-
-Admins can work across the organization or narrow to a facility. Members only see facilities they can access.
-
-If a grievance is missing from search or a list, confirm the current facility scope before changing filters.
+Administrators can work across the organization or select one facility. Members see only facilities they can access. If a record seems missing, check facility scope before changing filters.
 
 ## Search grievances
 
-Open search from the top bar, or press **Command+K** on macOS or **Ctrl+K** on Windows. On smaller screens, use the search icon.
+Open the top-bar search or press **Command+K** on macOS or **Ctrl+K** on Windows.
 
-When search opens without a query, Grievly shows **Recently viewed** grievances. After you type, results switch to **Top matches**.
+- With no query, search shows recently viewed grievances.
+- As you type, it shows the best matches inside your access scope.
+- Results can include status, source and attachment indicators, grievance ID, title, facility, assignee, created date, and a short preview.
 
-Search results can show:
+On wider screens, filter results by received date, facility, assignee, status, category, F-tag, attachments, intake source, Resident Council submission, employee involvement, third-party involvement, or anonymous reporter.
 
-- Status icons.
-- Public-intake, attachment, and High Priority indicators.
-- Grievance ID and title.
-- Facility, assignee, created date, and summary preview on wider screens.
+## Account, notifications, and help
 
-Select a result to open the grievance.
+Select your avatar to open **Account settings**, switch workspaces when you belong to more than one organization, or sign out. Account settings contains Profile, Security, Notifications, and Appearance.
 
-## Search filters
+The notification bell shows recent activity, unread state, and links back to the related record. Use its action menu to mark all notifications read or open notification preferences.
 
-On wider screens, search includes a filter sidebar.
-
-Use it to narrow results by:
-
-- **Received**: Any time, Past 7 days, or Past 30 days.
-- **Facility**.
-- **Assignee**.
-- **Status**: Open, Pending Approval, Overdue, or Resolved.
-- **Category**.
-- **F-tag**.
-- **Other**: Has attachments, Public submission, Submitted at Resident Council, Employee involved, Third party concern, or Anonymous reporter.
-
-Search only returns grievances inside your role and facility access.
-
-## Notifications
-
-Use the notification bell in the top bar to review recent activity.
-
-The badge shows the unread count and caps large counts as **99+**.
-
-The notification panel includes:
-
-- An **Unread only** toggle.
-- Actions for marking notifications read or unread.
-- A panel action menu for marking all notifications read or opening **Manage notifications**.
-- Notifications from the last 30 days.
-
-Selecting a notification opens the relevant grievance, report, or app destination when one is available.
-
-## Help and feedback
-
-Use the help menu to contact support, give product feedback, report a bug, or open docs.
-
-Feedback and support messages include your current app path so the Grievly team can understand where you were working.
-
-Do not include resident names, room numbers, narrative PHI, attachments, or other sensitive case details in support or feedback messages unless your organization has approved that sharing path.
+The help menu links to support, feedback, bug reporting, and these docs. Do not include resident names, room numbers, narratives, attachments, or other PHI in a support message unless your organization has approved that sharing path.
 
 <CardGroup cols={2}>
-  <Card title="Create a grievance" icon="file-plus" href="/grievance-log/create-a-grievance">
-    Open the composer from the top bar and capture the intake packet.
-  </Card>
   <Card title="View and filter grievances" icon="list-filter" href="/grievance-log/view-and-filter">
-    Use the grievance list for table filters, sorting, selected-row exports, and print summaries.
+    Narrow the grievance log and prepare exports or print summaries.
+  </Card>
+  <Card title="Account and appearance" icon="circle-user-round" href="/settings/account-and-appearance">
+    Manage personal settings and workspace switching.
   </Card>
   <Card title="Mentions and notifications" icon="bell" href="/grievance-log/mentions-and-notifications">
-    Learn which case events notify teammates and how subscriptions work.
+    Learn which case activity notifies teammates.
   </Card>
   <Card title="Privacy and PHI" icon="shield" href="/reference/privacy-and-phi">
-    Review what should stay inside approved Grievly records and storage.
+    Keep sensitive case information in approved systems.
   </Card>
 </CardGroup>
