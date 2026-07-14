@@ -70,7 +70,8 @@
           "triage-and-labels/ai-intake-analysis",
           "triage-and-labels/high-priority-grievances",
           "triage-and-labels/sla-deadlines",
-          "triage-and-labels/ftags-and-categories"
+          "triage-and-labels/ftags-and-categories",
+          "triage-and-labels/regulatory-guidance"
         ]
       },
       {
@@ -95,9 +96,7 @@
           "settings/notifications",
           "settings/team-access",
           "getting-started/facilities",
-          "settings/workspace-defaults",
-          "settings/compliance-and-baa",
-          "settings/billing"
+          "settings/workspace-defaults"
         ]
       },
       {
