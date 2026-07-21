@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Grievly Docs",
-  "description": "Product documentation for Grievly, the grievance operations platform for skilled nursing facilities.",
+  "name": "CareResolve Docs",
+  "description": "Product documentation for CareResolve, the grievance operations platform for skilled nursing facilities.",
   "colors": {
     "primary": "#2F805A",
     "light": "#54B487",
@@ -11,7 +11,7 @@
   "logo": {
     "light": "/logo.svg",
     "dark": "/logo-dark.svg",
-    "href": "https://grievly.ai"
+    "href": "https://careresolve.ai"
   },
   "favicon": "/favicon.svg",
   "appearance": {
@@ -34,7 +34,7 @@
     }
   },
   "search": {
-    "prompt": "Search Grievly docs"
+    "prompt": "Search CareResolve docs"
   },
   "navigation": {
     "groups": [
@@ -113,12 +113,12 @@
   "navbar": {
     "links": [
       {
-        "label": "Open Grievly",
-        "href": "https://app.grievly.ai"
+        "label": "Open CareResolve",
+        "href": "https://app.careresolve.ai"
       },
       {
         "label": "Support",
-        "href": "mailto:support@grievly.ai"
+        "href": "mailto:support@careresolve.ai"
       }
     ]
   }

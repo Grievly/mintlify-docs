@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Grievly">
-  <g transform="translate(50 50) rotate(200) scale(86)">
-    <path d="M0,-0.52 C-0.30,-0.30 -0.44,0.06 0,0.52 Z" fill="#54B487"></path>
-    <path d="M0,-0.52 C0.30,-0.30 0.44,0.06 0,0.52 Z" fill="#2F805A"></path>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="CareResolve">
+  <g transform="translate(0 30)">
+    <path d="M64 14C31.3 14 15 30 15 50s16.3 36 49 36" fill="none" stroke="#2F805A" stroke-width="22" stroke-linecap="round"/>
+    <path d="M96 14c32.7 0 49 16 49 36s-16.3 36-49 36" fill="none" stroke="#54B487" stroke-width="22" stroke-linecap="round"/>
   </g>
 </svg>
