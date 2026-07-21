@@ -1,6 +1,6 @@
-# Grievly Docs
+# CareResolve Docs
 
-Mintlify documentation for Grievly.
+Mintlify documentation for CareResolve.
 
 ## Local preview
 
@@ -10,4 +10,4 @@ Install the Mintlify CLI, then run:
 mint dev
 ```
 
-The docs are configured for `docs.grievly.ai`.
+The docs are configured for `docs.careresolve.ai`.
