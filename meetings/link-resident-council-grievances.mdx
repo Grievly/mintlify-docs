@@ -1,0 +1,65 @@
+---
+title: "Link Resident Council grievances"
+description: "Record which facility meeting produced a Resident Council grievance and navigate the relationship from either record."
+---
+
+A Resident Council grievance can optionally link to the meeting where the concern was raised. The link preserves source context and appears on both the grievance and meeting records.
+
+Existing Resident Council grievances remain valid without a meeting link.
+
+## Create and link a grievance
+
+1. Open the **New grievance** composer.
+2. Confirm the facility.
+3. Select **Submitted at Resident Council Meeting**.
+4. Select **Link meeting**.
+5. Search or browse same-facility meetings. Use **View** to review a meeting's details, notes, and linked grievances before selecting it.
+6. Choose **Select meeting**, finish the concern and routing details, and create the grievance.
+
+The meeting link is optional. If the meeting has not been entered yet, create the grievance without a link and add it later.
+
+<Note>
+  A Resident Council submission is treated as meeting-derived rather than resident-specific. CareResolve omits resident and reporter identity from that intake record while retaining the signed-in team member as the filer.
+</Note>
+
+## Link or change an existing grievance
+
+Only an unlocked internal intake record can be changed.
+
+1. Open the grievance.
+2. Open **Intake record** from the timeline.
+3. Select the pencil action.
+4. Select **Submitted at Resident Council Meeting** if it is not already selected.
+5. Link, change, or remove the meeting.
+6. Save the intake record.
+
+Clearing the Resident Council option also removes the source-meeting link. Public intake packets, pending-approval cases, and resolved cases remain read-only through this editor.
+
+## Where the link appears
+
+- The grievance right rail shows a **Resident Council meeting** section with the meeting title, date, and time.
+- The meeting page shows the grievance under **Linked grievances** with its current status.
+- The grievance log's **Submitted at Resident Council** filter includes Council submissions whether or not a meeting has been linked.
+
+Select either relationship to open the other record.
+
+## Source link versus note reference
+
+These two meeting connections serve different purposes:
+
+| Connection | Where it is created | What it means |
+| --- | --- | --- |
+| Source meeting | Grievance intake record | The concern was submitted at that Resident Council meeting |
+| `#` grievance reference | Meeting notes | The notes mention or discuss that grievance |
+
+A `#` reference in meeting notes does not automatically make the meeting the grievance's source. Add the source link from the grievance when provenance matters.
+
+## Facility and deletion rules
+
+The grievance and meeting must belong to the same facility. Changing facility scope or search terms cannot expose meetings outside your access.
+
+An administrator cannot delete a meeting while source-linked grievances remain. Open each linked grievance, remove or change its source meeting, and then retry deletion.
+
+<Card title="Manage meeting notes" icon="notebook-tabs" href="/meetings/manage-meetings">
+  Learn how to create, search, edit, lock, and delete meetings.
+</Card>

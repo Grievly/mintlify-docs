@@ -29,6 +29,9 @@ While approval is pending:
 - Existing resolution fields, case notes, attachments, and intake details are read-only.
 - Users with case access can add an attachment; administrators can append a note.
 - Required signers are notified.
+- An F-tagged Resolution shows an advisory compliance review above the approval actions.
+
+The compliance review does not block approval. It is preserved when the unchanged Resolution becomes final.
 
 ## Approve the resolution
 
@@ -42,10 +45,12 @@ An administrator may select **Bypass remaining approvals** for an exception. Dep
 
 Use bypass intentionally: it completes the resolution without the outstanding signatures.
 
-## Cancel, resubmit, or reopen
+## Cancel, edit, resubmit, or reopen
 
-The submitter or an administrator can cancel a pending request. Cancellation unlocks the open case and clears that request. A later submission creates a new signer snapshot, and every approval must be completed again.
+The submitter, a configured signer, or an administrator can select **Cancel approval and edit**. Cancellation unlocks the open case and clears that request. A later submission creates a new signer snapshot, prepares a fresh compliance review when an F-tag is present, and requires every approval again.
 
 Reopening a resolved grievance preserves its history and original due date but clears approval state from the active workflow. If approvals are still enabled, the new resolution must be submitted again under the current facility settings.
 
 Required signers see cases awaiting their approval in **My queue**, even when they are not the assignee. The grievance log also provides a **Pending Approval** filter.
+
+After finalization, an administrator or configured facility Resolution approver can correct a Resolution in place when its compliance review identifies gaps. **Update Resolution** preserves resolved status and completed approvals while recording the changes and rerunning the review.

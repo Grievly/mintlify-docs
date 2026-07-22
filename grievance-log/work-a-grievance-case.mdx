@@ -13,7 +13,7 @@ The grievance detail page is the working record for a case.
 
 - **Header:** title, grievance ID, status, SLA context, and case actions.
 - **Timeline:** intake record, AI summary, case notes, activity, attachments, and resolution actions.
-- **Right rail:** subscription, assignee, due date, resident and reporter details, labels, patterns, attachments, and participants.
+- **Right rail:** subscription, assignee, due date, filer, resident and reporter details, Resident Council meeting, labels, patterns, attachments, and participants.
 
 Use the three-dot header menu to print a summary or edit the title of an unlocked grievance. Administrators can delete an unresolved grievance; resolved grievances cannot be deleted.
 
@@ -43,11 +43,15 @@ Attachments show scan state before Open or Download becomes available. Supported
 
 The Participants panel summarizes people who have touched the case. Pattern membership links open the related pattern without leaving the grievance.
 
+For a Resident Council submission, the right rail shows its linked meeting or **No meeting linked**. Open the internal intake record to add, change, or remove that source link.
+
 ## Locked case states
 
 While resolution approval is pending, existing resolution fields, notes, attachments, and intake details are read-only. Users with case access may add an attachment, and administrators may append a case note. Cancel the approval request before changing existing case content.
 
 After resolution, the existing case is read-only. Administrators may append a new note or attachment, and any user with case access can reopen the grievance when more work is required. Reopening preserves history and the original due date.
+
+Administrators and configured facility Resolution approvers can use **Update Resolution** when a compliance review identifies gaps. This controlled correction keeps the grievance resolved, records field-level changes in the timeline, and runs a fresh review.
 
 <CardGroup cols={2}>
   <Card title="Mentions and notifications" icon="bell" href="/grievance-log/mentions-and-notifications">
