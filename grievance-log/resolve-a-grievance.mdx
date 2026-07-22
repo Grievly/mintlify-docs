@@ -22,6 +22,8 @@ The Outcome date records when the underlying outcome was completed. It can diffe
 
 If the facility requires sign-off, the action is **Submit for approval**. The grievance stays open and locked while required signers review it. A submitter who is the only required signer can resolve it in the same confirmation flow.
 
+For an F-tagged grievance, CareResolve prepares the advisory compliance review as soon as the Resolution is submitted. Reviewers can read it before approving, but it never blocks an approval action. An authorized reviewer can choose **Cancel approval and edit**, update the Resolution, and submit it for a fresh approval cycle.
+
 <Card title="Resolution approvals" icon="shield-check" href="/grievance-log/resolution-approvals">
   Review required signers, pending approval, bypass, cancellation, and resubmission.
 </Card>
@@ -34,7 +36,9 @@ Use **Improve writing** on an individual field to accept or dismiss a wording su
 
 ## After resolution
 
-Most of the existing case becomes read-only to protect the final record. For an F-tagged grievance, CareResolve prepares a collapsed advisory **Compliance review** that compares the documented resolution with federal Appendix PP guidance.
+Most of the existing case becomes read-only to protect the final record. For an F-tagged grievance, the collapsed advisory **Compliance review** compares the documented resolution and supporting case file with federal Appendix PP guidance. Case notes and clean supported attachments can count as evidence; an empty supporting case file is not itself a gap.
+
+When the review identifies gaps, administrators and configured facility Resolution approvers can select **Update Resolution**. Correct the structured Resolution and choose **Save & recheck**. CareResolve keeps the grievance resolved, preserves its system finalization time and approvals, adds field-level change activity, and runs a fresh compliance review.
 
 If new information arrives, any user with case access can reopen the grievance. Choose a reason; **Other** also requires notes. Reopening keeps history and the original due date, clears active approval state, and returns the case to the open workflow.
 

@@ -1,0 +1,75 @@
+---
+title: "Manage meeting notes"
+description: "Create, search, edit, lock, and review facility meeting records in CareResolve."
+---
+
+Meetings is a facility-scoped workspace for dated notes and grievance follow-up. Use it for Resident Council meetings and other facility meetings that need a searchable, attributable record.
+
+## Create a meeting
+
+1. Open **Meetings** from the sidebar.
+2. Select **New meeting**.
+3. Enter a title, confirm the facility, choose the date, and optionally add a start time.
+4. Select **Create**.
+
+CareResolve opens the full meeting page so you can begin taking notes. Members can create meetings in facilities they can access; administrators can create them in any active facility in the organization.
+
+## Take notes
+
+The meeting title, date, time, and notes save as you work. The activity control shows save state and who created, last edited, or locked the meeting.
+
+Type `/` at the start of a block to add:
+
+- A grievance reference.
+- Text or a heading.
+- A bulleted, numbered, or to-do list.
+- A quote or divider.
+
+Select text to apply inline formatting. Use to-do lists for follow-up items that belong in the meeting record.
+
+### Reference a grievance in the notes
+
+Type `#`, then search for an open or resolved grievance from the same facility. Select the grievance to insert a navigable reference card into the notes.
+
+This note reference provides context only. It is different from recording the meeting as the grievance's Resident Council source. Use the grievance intake record for that provenance link.
+
+<Card title="Link a Resident Council grievance" icon="link" href="/meetings/link-resident-council-grievances">
+  Connect an internal grievance to the meeting where the concern was raised.
+</Card>
+
+## Find and open meetings
+
+The Meetings page groups records by date, including Upcoming, Today, recent periods, and older months.
+
+- Use the facility selector to narrow the list.
+- Use meeting search to match titles and note text.
+- Select a row to open its preview sheet.
+- Use the expand action when you want the full meeting page.
+
+Search and facility results always stay inside your facility access.
+
+## Linked grievances
+
+When a grievance records this meeting as its Resident Council source, the meeting displays a **Linked grievances** section above the notes. Each row shows the grievance ID, title, and open or resolved state and links to the case.
+
+The meeting page is read-only for this relationship. To change or remove the source link, edit the grievance's internal intake record.
+
+## Autosave and concurrent edits
+
+CareResolve protects meeting notes from silently overwriting a newer edit. If the meeting changed elsewhere, use **View latest** or the activity refresh action before editing again.
+
+If a save indicator remains in an error state, keep the page open and refresh to the latest version before re-entering any unsaved change.
+
+## Lock or delete a meeting
+
+Only administrators can use the meeting action menu to lock, unlock, or delete a meeting.
+
+- **Lock:** makes the title, date, time, and notes read-only for everyone until an administrator unlocks the meeting.
+- **Unlock:** returns the meeting to normal editing.
+- **Delete:** permanently removes the meeting and its notes.
+
+CareResolve blocks deletion while any grievances use the meeting as their source. Remove those links from the grievance intake records first.
+
+<Warning>
+  Deleting a meeting cannot be undone. Lock a completed meeting when the goal is to preserve it as read-only evidence.
+</Warning>
